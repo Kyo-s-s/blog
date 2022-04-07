@@ -6,37 +6,18 @@
     <description>Recent content in Posts on Kyo&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 06 May 2019 23:26:23 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 07 Apr 2022 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://Kyo-s-s.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>The standard Lorem Ipsum passage, used since the 1500s</title>
-      <link>https://Kyo-s-s.github.io/blog/posts/the-standard-lorem-ipsum-passage-used-since-the-1500s/</link>
-      <pubDate>Mon, 06 May 2019 23:26:23 +0800</pubDate>
+      <title>LCA</title>
+      <link>https://Kyo-s-s.github.io/blog/posts/lca/</link>
+      <pubDate>Thu, 07 Apr 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://Kyo-s-s.github.io/blog/posts/the-standard-lorem-ipsum-passage-used-since-the-1500s/</guid>
-      <description>The standard Lorem Ipsum passage, used since the 1500s Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam placerat lacinia tellus, in blandit ligula faucibus eu. Nulla efficitur mauris mauris, vel aliquet quam tincidunt et. Aenean tincidunt, magna et faucibus pulvinar, nisl sapien molestie felis, non semper ligula nulla quis ante. Donec ut placerat lorem, id luctus dui. Proin semper eros eu rutrum egestas. Nullam at sem at turpis feugiat dapibus a et ex.</description>
-    </item>
-    
-    <item>
-      <title>Hello World</title>
-      <link>https://Kyo-s-s.github.io/blog/posts/hello-world/</link>
-      <pubDate>Sun, 28 Apr 2019 17:48:36 +0800</pubDate>
-      
-      <guid>https://Kyo-s-s.github.io/blog/posts/hello-world/</guid>
-      <description>This is a demo page.
-Lorem translated But I must explain to you how all this mistaken idea of denouncing of a pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful.</description>
-    </item>
-    
-    <item>
-      <title>Test</title>
-      <link>https://Kyo-s-s.github.io/blog/posts/template/</link>
-      <pubDate>Sun, 28 Apr 2019 17:48:36 +0800</pubDate>
-      
-      <guid>https://Kyo-s-s.github.io/blog/posts/template/</guid>
-      <description>Test #include&amp;lt;bits/stdc++.h&amp;gt;using namespace std; int main(){ cout &amp;lt;&amp;lt; &amp;#34;Hello, World!&amp;#34; &amp;lt;&amp;lt; endl; } </description>
+      <guid>https://Kyo-s-s.github.io/blog/posts/lca/</guid>
+      <description>LCA 根付き木に対し2頂点間の最近共通祖先(LCA)を求める。 オイラーツアーとRMQで求めている。RMQをセグ木で求めているが、更新なし+隣との</description>
     </item>
     
   </channel>

@@ -30,5 +30,14 @@
 Lorem translated But I must explain to you how all this mistaken idea of denouncing of a pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful.</description>
     </item>
     
+    <item>
+      <title>Test</title>
+      <link>https://Kyo-s-s.github.io/blog/posts/template/</link>
+      <pubDate>Sun, 28 Apr 2019 17:48:36 +0800</pubDate>
+      
+      <guid>https://Kyo-s-s.github.io/blog/posts/template/</guid>
+      <description>Test #include&amp;lt;bits/stdc++.h&amp;gt;using namespace std; int main(){ cout &amp;lt;&amp;lt; &amp;#34;Hello, World!&amp;#34; &amp;lt;&amp;lt; endl; } </description>
+    </item>
+    
   </channel>
 </rss>

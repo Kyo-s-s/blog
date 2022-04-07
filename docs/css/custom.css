@@ -5,3 +5,7 @@ html {
 body {
     font-family: 'Noto Sans JP', sans-serif;
 }
+
+pre {
+    padding: 0;
+}

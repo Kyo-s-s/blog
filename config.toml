@@ -28,7 +28,7 @@ googleAnalytics = "your ga id"
 
 # social link in the footer, change it to "" hide it
 [social]
-    github = "Kyo-s-s"
+    github = "https://github.com/Kyo-s-s"
     facebook = ""
     twitter = "https://twitter.com/Kyo_s_s"
     behance = ""
@@ -103,9 +103,9 @@ googleAnalytics = "your ga id"
     name = "Wild"
     url = "#"
     weight = 20
-[[menu.main]]
-    parent = "Theme"
-    identifier = "export-wild"
-    name = "Export Wild Style"
-    url = "#"
-    weight = 25
+# [[menu.main]]
+    # parent = "Theme"
+    # identifier = "export-wild"
+    # name = "Export Wild Style"
+    # url = "#"
+    # weight = 25

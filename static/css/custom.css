@@ -1,0 +1,7 @@
+html {
+    font-size: min(calc(1vh + 1vw), 18px);
+}
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+}

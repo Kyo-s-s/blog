@@ -1,7 +1,7 @@
 theme = "edidor"
-title = "Edidor Demo"
+title = "Kyo's blog"
 baseurl = "https://Kyo-s-s.github.io/blog/"
-AuthorName = "Jon Doe"
+AuthorName = "Kyo"
 # canonifyurls　= true
 publishDir = "docs"
 # place your logo file to ./static/images to set logo
@@ -28,24 +28,24 @@ googleAnalytics = "your ga id"
 
 # social link in the footer, change it to "" hide it
 [social]
-    github = " "
-    facebook = " "
-    twitter = " "
-    behance = " "
-    email = " "
+    github = "Kyo-s-s"
+    facebook = ""
+    twitter = "https://twitter.com/Kyo_s_s"
+    behance = ""
+    email = ""
 
 # author, title, description are used in the home page, you can embed html tag in description
 [params]
     # will use AuthorName if you leave it blank, but you can set it to arbitrary text
-    author = "sunfy"
-    title = "SUNFY DEMO"
+    author = "Kyo"
+    title = "Kyo's blog"
     description = "A hugo site using Edidor. <br/><br/> Ctrl+B toggle sidebar. "
     # change it to false if you don't need syntax highlighting, and save a little bandwidth
     isHighlightCode = true
     # set true need to use custom js
     useCustomSyntaxHighlight = false
     customJs = []
-    customCss = []
+    customCss = ["custom.css"]
     mode = "light"
 # menubar setting, you can change url, weight and name except the 'Theme'.
 [[menu.main]]

@@ -2,7 +2,7 @@ theme = "edidor"
 title = "Edidor Demo"
 baseurl = "https://Kyo-s-s.github.io/blog/"
 AuthorName = "Jon Doe"
-canonifyurls　= true
+# canonifyurls　= true
 publishDir = "docs"
 # place your logo file to ./static/images to set logo
 

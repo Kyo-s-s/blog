@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogging on Edidor Demo</title>
+    <link>https://Kyo-s-s.github.io/blog/tags/blogging/</link>
+    <description>Recent content in Blogging on Edidor Demo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 28 Apr 2019 17:48:36 +0800</lastBuildDate>
+    
+	<atom:link href="https://Kyo-s-s.github.io/blog/tags/blogging/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hello World</title>
+      <link>https://Kyo-s-s.github.io/blog/posts/hello-world/</link>
+      <pubDate>Sun, 28 Apr 2019 17:48:36 +0800</pubDate>
+      
+      <guid>https://Kyo-s-s.github.io/blog/posts/hello-world/</guid>
+      <description>This is a demo page.
+Lorem translated But I must explain to you how all this mistaken idea of denouncing of a pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful.</description>
+    </item>
+    
+  </channel>
+</rss>

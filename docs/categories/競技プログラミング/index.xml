@@ -6,10 +6,19 @@
     <description>Recent content in 競技プログラミング on Kyo&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 09 Apr 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 10 Apr 2022 00:35:28 +0900</lastBuildDate>
     
 	<atom:link href="https://Kyo-s-s.github.io/blog/categories/%E7%AB%B6%E6%8A%80%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>ARC 138 参加記</title>
+      <link>https://Kyo-s-s.github.io/blog/posts/arc_138/</link>
+      <pubDate>Sun, 10 Apr 2022 00:35:28 +0900</pubDate>
+      
+      <guid>https://Kyo-s-s.github.io/blog/posts/arc_138/</guid>
+      <description>88分3完599位、パフォーマンスは1791でした。 A 問題 長さ$N$の数列$A$が与えられます。$A$の先頭$K$項の和をスコアと呼ぶことに</description>
+    </item>
     
     <item>
       <title>Google Code Jam Round 1A 2022 参加記</title>

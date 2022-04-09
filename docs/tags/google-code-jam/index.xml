@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Kyo&#39;s blog</title>
-    <link>https://Kyo-s-s.github.io/blog/posts/</link>
-    <description>Recent content in Posts on Kyo&#39;s blog</description>
+    <title>Google Code Jam on Kyo&#39;s blog</title>
+    <link>https://Kyo-s-s.github.io/blog/tags/google-code-jam/</link>
+    <description>Recent content in Google Code Jam on Kyo&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sat, 09 Apr 2022 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://Kyo-s-s.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://Kyo-s-s.github.io/blog/tags/google-code-jam/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -18,15 +18,6 @@
       
       <guid>https://Kyo-s-s.github.io/blog/posts/gcj_r1a_2022/</guid>
       <description>1時間9分2完で1454位でした。誤読したり無駄なペナを食らったりしましたが、Round 1通過したっぽいのでよかったです。 A 問題 文字列$S$</description>
-    </item>
-    
-    <item>
-      <title>LCA</title>
-      <link>https://Kyo-s-s.github.io/blog/posts/lca/</link>
-      <pubDate>Thu, 07 Apr 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://Kyo-s-s.github.io/blog/posts/lca/</guid>
-      <description>LCA 根付き木に対し2頂点間の最近共通祖先(LCA)を求める。 オイラーツアーとRMQで求めている。RMQをセグ木で求めているが、更新なし+隣との</description>
     </item>
     
   </channel>

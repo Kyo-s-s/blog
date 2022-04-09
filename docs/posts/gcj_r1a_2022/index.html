@@ -15,11 +15,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="generator" content="Hugo 0.68.3" />
     
-    <link rel="canonical" href="https://Kyo-s-s.github.io/blog/posts/lca/" />
+    <link rel="canonical" href="https://Kyo-s-s.github.io/blog/posts/gcj_r1a_2022/" />
     <meta name="description" content="A hugo site using Edidor. &lt;br/&gt;&lt;br/&gt; Ctrl&#43;B toggle sidebar. ">
     
 
-    <title>LCA &middot; Kyo&#39;s blog</title>
+    <title>Google Code Jam Round 1A 2022 参加記 &middot; Kyo&#39;s blog</title>
 
     <link rel="shortcut icon" href="https://Kyo-s-s.github.io/blog/images/favicon.ico" />
 
@@ -174,12 +174,12 @@
         </nav>
         <main class="main">
             <article class="article">
-    <h2 class="title"><a href='/blog/posts/lca/' class="btn">LCA</a></h2>
+    <h2 class="title"><a href='/blog/posts/gcj_r1a_2022/' class="btn">Google Code Jam Round 1A 2022 参加記</a></h2>
     <div class="article-meta clearfix">
         <ul class="dates clearfix left control">
             <li><i class="icon icon-date"></i></li>
             <li class="publish-date">
-                <time datetime="2022.04.07">2022.04.07</time>
+                <time datetime="2022.04.09">2022.04.09</time>
             </li>
         </ul>
         
@@ -198,7 +198,7 @@
             <li><i class="icon icon-tags"></i></li>
             
             <li>
-                <a href="https://Kyo-s-s.github.io/blog/tags/%E3%83%A9%E3%82%A4%E3%83%96%E3%83%A9%E3%83%AA/" class="btn">ライブラリ</a>
+                <a href="https://Kyo-s-s.github.io/blog/tags/google-code-jam/" class="btn">Google Code Jam</a>
             </li>
             
         </ul>
@@ -206,14 +206,114 @@
     </div>
     <div class="content">
         
-        <h2 id="lca">LCA</h2>
-<p>根付き木に対し2頂点間の最近共通祖先(LCA)を求める。</p>
-<p>オイラーツアーとRMQで求めている。RMQをセグ木で求めているが、更新なし+隣との差が$\pm$1 なのでもっと高速にできるらしい。</p>
-<h2 id="コード">コード</h2>
-<p><a href="https://github.com/Kyo-s-s/Kyo_s_s_Library/blob/main/lib/data-structure/LCA.cpp">ここ</a></p>
-<h2 id="使い方">使い方</h2>
-<p><a href="https://github.com/Kyo-s-s/Kyo_s_s_Library/blob/main/md/LCA.md">ここ</a></p>
-<p>めっちゃ雑になっちゃった　書き足すかも</p>
+        <p>1時間9分2完で1454位でした。誤読したり無駄なペナを食らったりしましたが、Round  1通過したっぽいのでよかったです。</p>
+<h2 id="a">A</h2>
+<h4 id="問題">問題</h4>
+<blockquote>
+<p>文字列$S$が渡されます。あなたはこの中のいくつかの文字をハイライトすることができます。ハイライトされていない文字は新しい文字列に1度だけ付与され、ハイライトされている文字は新しい文字列に2度付与されます。この操作でできる辞書順最小の文字列を出力してください。</p>
+<p>たとえば、&ldquo;HELLOWORLD&quot;のH、最初と最後のL、最後のOをハイライトすると、&ldquo;HHELLLOWOORLLD&quot;となります。</p>
+<ul>
+<li>$1 \leq T \leq 100$</li>
+<li>$1 \leq |S| \leq 100$</li>
+</ul>
+</blockquote>
+<h4 id="考察">考察</h4>
+<p>後ろから愚直にシミュレーションしていきました。</p>
+<h4 id="提出コード">提出コード</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C++" data-lang="C++"><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">solve</span>(){
+    string S; cin <span style="color:#f92672">&gt;&gt;</span> S;
+    <span style="color:#66d9ef">int</span> N <span style="color:#f92672">=</span> S.length();
+    string ans <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>;
+    
+    repd(i, N){
+        string tmp1 <span style="color:#f92672">=</span> S[i] <span style="color:#f92672">+</span> ans;
+        string tmp2 <span style="color:#f92672">=</span> S[i] <span style="color:#f92672">+</span> tmp1;
+        <span style="color:#66d9ef">if</span>(tmp1 <span style="color:#f92672">&lt;</span> tmp2) ans <span style="color:#f92672">=</span> tmp1;
+        <span style="color:#66d9ef">else</span> ans <span style="color:#f92672">=</span> tmp2;
+    }
+    cout <span style="color:#f92672">&lt;&lt;</span> ans <span style="color:#f92672">&lt;&lt;</span> endl;
+}
+
+<span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>(){
+    <span style="color:#66d9ef">int</span> T; cin <span style="color:#f92672">&gt;&gt;</span> T;
+    rrep(t, T){
+        cout <span style="color:#f92672">&lt;&lt;</span> <span style="color:#e6db74">&#34;Case #&#34;</span> <span style="color:#f92672">&lt;&lt;</span> t <span style="color:#f92672">&lt;&lt;</span> <span style="color:#e6db74">&#34;: &#34;</span>;
+        solve();
+    }
+}
+</code></pre></div><h2 id="b">B</h2>
+<h4 id="問題-1">問題</h4>
+<blockquote>
+<p>整数$N$が与えられます。まず$N$個の異なる整数を選択し出力してください。ジャッジからそれらとは異なる$N$個の整数が出力されます。これら$2N$個の整数を2つの部分集合に分割してください。ただし、その両方の和が等しくなるようにしなければなりません。$2N$個の整数は$1$から$10^9$までの整数であり、和が偶数になることが保証されます。</p>
+<ul>
+<li>$1 \leq T \leq 100$</li>
+<li>$N = 100$</li>
+<li>$2N$個の整数はすべて異なり、$1$から$10^9$までの整数</li>
+</ul>
+</blockquote>
+<h4 id="考察-1">考察</h4>
+<p>$2^0, 2^1, 2^2, &hellip; 2^{30}$があると$10^9$以下のすべての数を作ることができます。よってこれらは確定です。残りですが、適当に$10^9, 10^9-1, 10^9 - 2, &hellip;$ を入れました。 焦りながら書いたのでだいぶ汚いです、ごめんなさい&gt;&lt;</p>
+<p><strong>インタラクティブな問題なので、フラッシュをしなくてはなりません。僕はフラッシュを忘れて1TLEしました。</strong></p>
+<h4 id="提出コード-1">提出コード</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">solve</span>(){
+	<span style="color:#66d9ef">int</span> N; cin <span style="color:#f92672">&gt;&gt;</span> N;
+    <span style="color:#75715e">//出力する整数のリスト
+</span><span style="color:#75715e"></span>    vll L;
+    ll k <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>;
+    <span style="color:#66d9ef">while</span>(k <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">1000000000</span>){
+        L.pb(k); k <span style="color:#f92672">*=</span> <span style="color:#ae81ff">2</span>;
+    }
+    ll add <span style="color:#f92672">=</span> <span style="color:#ae81ff">1000000000</span>;
+    <span style="color:#66d9ef">while</span>(L.size() <span style="color:#f92672">&lt;</span> N){
+        L.pb(add); add<span style="color:#f92672">--</span>;
+    }
+    
+    <span style="color:#75715e">//出力
+</span><span style="color:#75715e"></span>    rep(i, L.size()){
+        cout <span style="color:#f92672">&lt;&lt;</span> L[i];
+        <span style="color:#66d9ef">if</span>(i <span style="color:#f92672">!=</span> L.size() <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>) cout <span style="color:#f92672">&lt;&lt;</span> <span style="color:#e6db74">&#34; &#34;</span>;
+        <span style="color:#66d9ef">else</span> cout <span style="color:#f92672">&lt;&lt;</span> endl;
+    }
+    
+    <span style="color:#75715e">//入力
+</span><span style="color:#75715e"></span>    rep(i, N){
+        ll a; cin <span style="color:#f92672">&gt;&gt;</span> a;
+        L.pb(a);
+    }
+    
+    sort(all(L));
+    ll su <span style="color:#f92672">=</span> sum(L);
+    <span style="color:#75715e">//部分集合の和となるべき数
+</span><span style="color:#75715e"></span>    ll go <span style="color:#f92672">=</span> su <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span>;
+    <span style="color:#75715e">//答えの集合
+</span><span style="color:#75715e"></span>    vll Ans;
+    
+    <span style="color:#75715e">//1e9以下になるまで大きい数から追加していく
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">while</span>(go <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">1000000000</span>){
+        go <span style="color:#f92672">-=</span> L.back();
+        Ans.pb(L.back());
+        L.pop_back();
+    }
+    
+    rep(i, <span style="color:#ae81ff">32</span>){
+        <span style="color:#66d9ef">if</span>((go <span style="color:#f92672">&gt;&gt;</span> i) <span style="color:#f92672">&amp;</span> i) Ans.pb(<span style="color:#ae81ff">1</span> <span style="color:#f92672">&lt;&lt;</span> i);
+    }
+    
+    <span style="color:#75715e">//出力
+</span><span style="color:#75715e"></span>    rep(i, Ans.size()){
+        cout <span style="color:#f92672">&lt;&lt;</span> Ans[i];
+        <span style="color:#66d9ef">if</span>(i <span style="color:#f92672">!=</span> Ans.sizse() <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>) cout <span style="color:#f92672">&lt;&lt;</span> <span style="color:#e6db74">&#34; &#34;</span>;
+        <span style="color:#66d9ef">else</span> cout <span style="color:#f92672">&lt;&lt;</span> endl;
+    }
+    
+}
+
+<span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>(){
+    <span style="color:#66d9ef">int</span> T; cin <span style="color:#f92672">&gt;&gt;</span> T;
+    rep(t, T) solve();
+}
+</code></pre></div><h2 id="c">C</h2>
+<p>誤読していたりしていて解けませんでした(誤読していなくても解けていなさそうでした)。</p>
 
         
     </div>

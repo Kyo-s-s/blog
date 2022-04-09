@@ -6,10 +6,19 @@
     <description>Recent content on Kyo&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 07 Apr 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 09 Apr 2022 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://Kyo-s-s.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Google Code Jam Round 1A 2022 参加記</title>
+      <link>https://Kyo-s-s.github.io/blog/posts/gcj_r1a_2022/</link>
+      <pubDate>Sat, 09 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://Kyo-s-s.github.io/blog/posts/gcj_r1a_2022/</guid>
+      <description>1時間9分2完で1454位でした。誤読したり無駄なペナを食らったりしましたが、Round 1通過したっぽいのでよかったです。 A 問題 文字列$S$</description>
+    </item>
     
     <item>
       <title>LCA</title>

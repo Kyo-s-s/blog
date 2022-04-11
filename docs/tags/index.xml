@@ -6,10 +6,19 @@
     <description>Recent content in Tags on Kyo&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 10 Apr 2022 00:35:28 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 11 Apr 2022 10:34:41 +0900</lastBuildDate>
     
 	<atom:link href="https://Kyo-s-s.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>ABC</title>
+      <link>https://Kyo-s-s.github.io/blog/tags/abc/</link>
+      <pubDate>Mon, 11 Apr 2022 10:34:41 +0900</pubDate>
+      
+      <guid>https://Kyo-s-s.github.io/blog/tags/abc/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>ARC</title>

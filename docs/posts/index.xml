@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Kyo&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 10 Apr 2022 00:35:28 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 11 Apr 2022 10:34:41 +0900</lastBuildDate>
     
 	<atom:link href="https://Kyo-s-s.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>ABC 247 参加記</title>
+      <link>https://Kyo-s-s.github.io/blog/posts/abc_247/</link>
+      <pubDate>Mon, 11 Apr 2022 10:34:41 +0900</pubDate>
+      
+      <guid>https://Kyo-s-s.github.io/blog/posts/abc_247/</guid>
+      <description>94分6完(3ペナ)でした。575位、パフォーマンスは1757です。 A Move Right 問題 0, 1からなる4文字の文字列$S$が渡されます。1つ右にシフトし</description>
+    </item>
     
     <item>
       <title>ARC 138 参加記</title>

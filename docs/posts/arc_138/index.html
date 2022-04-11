@@ -165,6 +165,8 @@
         <nav class="sidebar">
             <ul class="posts control">
     
+    <li><a class="no-break btn" href='/blog/posts/abc_247/'><i class="icon icon-post"></i>ABC 247 参加記</a></li>
+    
     <li><a class="no-break btn" href='/blog/posts/arc_138/'><i class="icon icon-post"></i>ARC 138 参加記</a></li>
     
     <li><a class="no-break btn" href='/blog/posts/gcj_r1a_2022/'><i class="icon icon-post"></i>Google Code Jam Round 1A 2022 参加記</a></li>
@@ -214,6 +216,11 @@
 <blockquote>
 <p>長さ$N$の数列$A$が与えられます。$A$の先頭$K$項の和をスコアと呼ぶことにします。与えられた$A$のスコアを$s$と置きます。</p>
 <p>$A$の隣接する2要素を入れ替える操作を好きな回数行うことができます。スコアを$s + 1$以上にすることが達成可能か判定し、また可能であるなら必要な最小の操作回数を求めてください。</p>
+<ul>
+<li>$2 \leq N \leq 4 \times 10 ^ 5$</li>
+<li>$1 \leq K \leq N - 1$</li>
+<li>$1 \leq A_i \leq 10 ^ 9$</li>
+</ul>
 </blockquote>
 <h4 id="考察">考察</h4>
 <p>$K+1$番目以降の要素のいずれかを先頭$K$個に持ってくることを考えます。$j &gt; K$番目の要素を$i \leq K$番目まで持ってくるとき、$j - i$手かかります。</p>
@@ -272,6 +279,10 @@ ll N, K; cin <span style="color:#f92672">&gt;&gt;</span> N <span style="color:#f
 </li>
 </ul>
 <p>0と1からなる長さ$N$の数列$A$が与えられます。$x$を$A$に一致させることが可能か判定してください。</p>
+<ul>
+<li>$1 \leq N \leq 2 \times 10 ^ 5$</li>
+<li>$0 \leq A_i \leq 1$</li>
+</ul>
 </blockquote>
 <h4 id="考察-1">考察</h4>
 <p>わからなかったので小さい$N$に対して作れる数列を列挙してエスパーしようとしたりしましたが、ダメでした。結局2WAしたのちぐちゃぐちゃなコードで一応ACはしました。</p>
@@ -325,6 +336,10 @@ ll N, K; cin <span style="color:#f92672">&gt;&gt;</span> N <span style="color:#f
 <li>整数$k(0 \leq k \leq N - 1)$を選び、カードに書かれている整数を左に$k$個ずらす。つまり、カード$1, 2, \cdots, N$に書かれている数を、$A_{k+1}, A_{k + 2}, \cdots, A_N, A_1, A_2, \cdots, A_{k}$に書き換える。</li>
 </ul>
 <p>あなたがすぬけくんのスコアを最大化するように不正をしたとき、選ぶべき$k$の値と$k$を選んだ場合のスコアを求めてください。</p>
+<ul>
+<li>$2 \leq N \leq 2 \times 10 ^ 5$</li>
+<li>$1 \leq A_i \leq 10^9$</li>
+</ul>
 </blockquote>
 <h4 id="考察-2">考察</h4>
 <p>すぬけくんがとることのできる最大スコアは$A$のうち整数の大きいもの上位$N / 2$個の総和です。実際これが可能です。</p>
@@ -436,7 +451,7 @@ ll N, K; cin <span style="color:#f92672">&gt;&gt;</span> N <span style="color:#f
 
     <ul class="control status clearfix">
         <li><a href="#" class="btn">Posts:
-                4</a>
+                5</a>
         </li>
         <li><a href="#" class="btn">Pages:
                 0</a></li>

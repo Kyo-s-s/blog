@@ -6,10 +6,19 @@
     <description>Recent content in 競技プログラミング on Kyo&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 11 Apr 2022 10:34:41 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 17 Apr 2022 19:34:25 +0900</lastBuildDate>
     
 	<atom:link href="https://Kyo-s-s.github.io/blog/categories/%E7%AB%B6%E6%8A%80%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>AtCoder 入青</title>
+      <link>https://Kyo-s-s.github.io/blog/posts/atcoderblue/</link>
+      <pubDate>Sun, 17 Apr 2022 19:34:25 +0900</pubDate>
+      
+      <guid>https://Kyo-s-s.github.io/blog/posts/atcoderblue/</guid>
+      <description>AtCoder 入青 AtCoder 青になりました！ わーい！ AtCoderに初めて参加したのが2021/4/24のABC199なので、1年で青まで来れたことになります。</description>
+    </item>
     
     <item>
       <title>ABC 247 参加記</title>

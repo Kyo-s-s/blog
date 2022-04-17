@@ -217,7 +217,7 @@
         <p>72分6完(1ペナ)で299位、2034パフォでした。初黄パフォ＆入青！わーい！</p>
 <p>入青記事は<a href="https://kyo-s-s.github.io/blog/posts/atcoderblue/">こちら</a>です。</p>
 <h3 id="a-lacked-numberhttpsatcoderjpcontestsabc248tasksabc248_a">A <a href="https://atcoder.jp/contests/abc248/tasks/abc248_a">Lacked Number</a></h3>
-<h5 id="問題">問題</h5>
+<h4 id="問題">問題</h4>
 <blockquote>
 <p>数字のみからなる、長さがちょうど9の文字列$S$が与えられます。$S$には0から9までのうち、ちょうど1つの数字を除いた9種類の数字が1度ずつ登場します。$S$に登場しない唯一の数字を出力してください。</p>
 <ul>
@@ -225,7 +225,7 @@
 <li>$S$の文字はすべて相異なる</li>
 </ul>
 </blockquote>
-<h5 id="提出コード">提出コード</h5>
+<h4 id="提出コード">提出コード</h4>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>(){
 
     string S; cin <span style="color:#f92672">&gt;&gt;</span> S;
@@ -238,7 +238,7 @@
     
 }
 </code></pre></div><h3 id="b-slimeshttpsatcoderjpcontestsabc248tasksabc248_b">B <a href="https://atcoder.jp/contests/abc248/tasks/abc248_b">Slimes</a></h3>
-<h5 id="問題-1">問題</h5>
+<h4 id="問題-1">問題</h4>
 <blockquote>
 <p>$A$匹のスライムがいます。すぬけくんが1回叫ぶたびにスライムは$K$倍に増殖します。スライムが$B$匹以上になるには、すぬけくんは最小で何回叫ぶ必要がありますか？</p>
 <ul>
@@ -246,7 +246,7 @@
 <li>$2 \leq K \leq 10^9$</li>
 </ul>
 </blockquote>
-<h5 id="提出コード-1">提出コード</h5>
+<h4 id="提出コード-1">提出コード</h4>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>(){
 
     ll A, B, K; cin <span style="color:#f92672">&gt;&gt;</span> A <span style="color:#f92672">&gt;&gt;</span> B <span style="color:#f92672">&gt;&gt;</span> K;
@@ -263,7 +263,7 @@
 
 }
 </code></pre></div><h3 id="c-dice-sumhttpsatcoderjpcontestsabc248tasksabc248_c">C <a href="https://atcoder.jp/contests/abc248/tasks/abc248_c">Dice Sum</a></h3>
-<h5 id="問題-2">問題</h5>
+<h4 id="問題-2">問題</h4>
 <blockquote>
 <p>長さ$N$からなる数列$A = (A_1, \cdots, A_N)$であって、以下の条件を満たすものは何通りありますか？</p>
 <ul>
@@ -276,9 +276,9 @@
 <li>$N \leq K \leq NM$</li>
 </ul>
 </blockquote>
-<h5 id="考察">考察</h5>
+<h4 id="考察">考察</h4>
 <p>別に考察記事を書こうと思っています。よってここでは省略します。</p>
-<h5 id="提出コード-2">提出コード</h5>
+<h4 id="提出コード-2">提出コード</h4>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#75715e">// https://github.com/Kyo-s-s/Kyo_s_s_Library/blob/main/lib/math/modint.cpp
 </span><span style="color:#75715e"></span><span style="color:#66d9ef">using</span> Mint <span style="color:#f92672">=</span> Modint998244353;
 
@@ -307,7 +307,7 @@
 
 }
 </code></pre></div><h3 id="d-range-count-queryhttpsatcoderjpcontestsabc248tasksabc248_d">D <a href="https://atcoder.jp/contests/abc248/tasks/abc248_d">Range Count Query</a></h3>
-<h5 id="問題-3">問題</h5>
+<h4 id="問題-3">問題</h4>
 <blockquote>
 <p>長さ$N$の数列$A = (A_1, \cdots, A_N)$が与えられます。　$Q$個のクエリにこたえてください。</p>
 <ul>
@@ -318,9 +318,9 @@
 <li>各クエリについて、$1 \leq L \leq R \leq N,~1 \leq X \leq N$</li>
 </ul>
 </blockquote>
-<h5 id="考察-1">考察</h5>
+<h4 id="考察-1">考察</h4>
 <p>$1, 2, \cdots, N$について、数列$A$の何番目に出現するか？を配列で持っておきます。すると、クエリ<code>L R X</code>では、$X$について($R+1$以上が初めて出現するインデックス) $-$ ($L$以上が初めて出現するインデックス) を答えればよいので1つのクエリを$O(\log N)$でさばけます。</p>
-<h5 id="提出コード-3">提出コード</h5>
+<h4 id="提出コード-3">提出コード</h4>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>(){
 
     ll N; cin <span style="color:#f92672">&gt;&gt;</span> N;
@@ -344,7 +344,7 @@
     }
 }
 </code></pre></div><h3 id="e-k-colinear-linehttpsatcoderjpcontestsabc248tasksabc248_e">E <a href="https://atcoder.jp/contests/abc248/tasks/abc248_e">K-colinear Line</a></h3>
-<h5 id="問題-4">問題</h5>
+<h4 id="問題-4">問題</h4>
 <blockquote>
 <p>座標平面上の$N$個の点が与えられます。$1\leq i \leq N$について、$i$番目の点の座標は$(X_i, Y_i)$です。座標平面上の直線であって、$N$個の点のうち$K$個以上の点を通るものの個数を求めてください。そのような直線が無限に存在する場合は<code>Infinity</code>を出力してください。</p>
 <ul>
@@ -353,11 +353,11 @@
 <li>$i \ne j$ならば$X_i \ne X_j$または$Y_i \ne Y_j$</li>
 </ul>
 </blockquote>
-<h5 id="考察-2">考察</h5>
+<h4 id="考察-2">考察</h4>
 <p>$K = 1$のとき、答えは<code>Infinity</code>です。それ以外の時、答えが<code>Infinity</code>になることはありません。$K \geq 2$の時を考えます。</p>
 <p>直線を方程式で表そうとするととても大変です(浮動小数点で持つと誤差でダメになってしまいます。分数で持つのも分数ライブラリがないと大変です)。</p>
 <p>$N$個の点のなかから2点を選ぶと、その2点を通る直線が1つだけ存在します(同じ点は存在しないため)。2点を先に決めてしまい、その2点を通る直線上にある点を探します。$K$個以上あったら答えに1を加算し、同一直線上にある点を重複して数えないようにメモしておきます。これをすると解けます。メモに<code>set</code>を使ってしまいましたが、2次元配列で持った方が無駄な$\log$がつかずにキレイですね。</p>
-<h5 id="提出コード-4">提出コード</h5>
+<h4 id="提出コード-4">提出コード</h4>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#75715e">/*3点が同一線上にあるか？　*/</span>
 <span style="color:#66d9ef">bool</span> <span style="color:#a6e22e">isonLine</span>(ll x1, ll y1, ll x2, ll y2, ll x3, ll y3){
     ll dx1 <span style="color:#f92672">=</span> x1 <span style="color:#f92672">-</span> x2;
@@ -401,7 +401,7 @@
     
 }   
 </code></pre></div><h3 id="f-keep-connecthttpsatcoderjpcontestsabc248tasksabc248_f">F <a href="https://atcoder.jp/contests/abc248/tasks/abc248_f">Keep Connect</a></h3>
-<h5 id="問題-5">問題</h5>
+<h4 id="問題-5">問題</h4>
 <blockquote>
 <p>2以上の整数$N$および素数$P$が与えられます。下図のような$2N$頂点$(3N-2)$辺のグラフ$G$を考えます。</p>
 <p><img src="https://Kyo-s-s.github.io/blog/images/ABC_248/img1.jpg" alt="ABC248img1"></p>
@@ -415,19 +415,19 @@
 <li>$P$は素数</li>
 </ul>
 </blockquote>
-<h5 id="考察-3">考察</h5>
+<h4 id="考察-3">考察</h4>
 <p>$N \leq 3000$なので、$O(N^2)$が通ります。ここでDPじゃないかなぁという推測を立てます(問題もDPっぽいので)。実際DPで解くことができます。</p>
 <p><img src="https://Kyo-s-s.github.io/blog/images/ABC_248/img2.jpg" alt="ABC248img2"></p>
-<p>このように分解し、左から右へ見ていきます。DPテーブルを、$dp[j][k] :=$ $j$本の辺を取り除いて、今見ている右端の上と下が連結か？(連結なら$k = 1$、連結でないなら$k = 0$)とします。</p>
-<p>遷移を考えます。まずは右端の上と下が連結の場合です。
-<img src="https://Kyo-s-s.github.io/blog/images/ABC_248/img3.jpg" alt="ABC248img3"></p>
+<p>このように分解し、左から右へ見ていきます。DPテーブルを、$dp[j][k] :=$ $j$本の辺を取り除いて、今見ている右端の上と下が連結か？(連結なら$k = 1$、連結でないなら$k = 0$)とします。
+遷移を考えます。まずは右端の上と下が連結の場合です。</p>
+<p><img src="https://Kyo-s-s.github.io/blog/images/ABC_248/img3.jpg" alt="ABC248img3"></p>
 <p>左から0本、1本、2本取り除いた場合の条件を満たすつなげ方です。0本、1本取り除いた場合は上下が連結のままですが、2本取り除いた場合は上下が連結でなくなります。</p>
-<p>次に右端の上と下が連結でない場合です。
-<img src="https://Kyo-s-s.github.io/blog/images/ABC_248/img4.jpg" alt="ABC248img4"></p>
+<p>次に右端の上と下が連結でない場合です。</p>
+<p><img src="https://Kyo-s-s.github.io/blog/images/ABC_248/img4.jpg" alt="ABC248img4"></p>
 <p>左から0本、1本取り除いた場合の条件を満たすつなげ方です。2本取り除くことはできません(非連結な部分ができてしまいます)。</p>
 <p>これで遷移をすべて出すことができました。</p>
 <p>素数$P$がテストケースによって変わるので、ACLのmodintを使いました。</p>
-<h5 id="提出コード-5">提出コード</h5>
+<h4 id="提出コード-5">提出コード</h4>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;atcoder/all&gt;</span><span style="color:#75715e">
 </span><span style="color:#75715e"></span><span style="color:#66d9ef">using</span> <span style="color:#66d9ef">namespace</span> atcoder;
 <span style="color:#66d9ef">using</span> mint <span style="color:#f92672">=</span> modint;

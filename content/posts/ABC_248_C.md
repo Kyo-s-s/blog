@@ -1,5 +1,5 @@
 ---
-title: "ABC 248 C 考察"
+title: "ABC 248 C Dice Sum 考察"
 date: 2022-04-18T14:04:05+09:00
 draft: true
 categories: ["競技プログラミング"]
@@ -7,7 +7,7 @@ tags: ["ABC", "FPS"]
 ---
 
 
-### [問題](https:/cratcoder.jp/contests/abc248/tasks/abc248_c)
+### [Dice Sum](https:/cratcoder.jp/contests/abc248/tasks/abc248_c)
 
 > 長さ$N$からなる数列$A = (A_1, \cdots, A_N)$であって、以下の条件を満たすものは何通りありますか？
 >

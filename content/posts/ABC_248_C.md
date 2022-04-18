@@ -126,8 +126,8 @@ int main(){
     fps Ans = {1};
     Ans.resize(K + 1);
 
-    sfps f = {{1, -1}, {M + 1, 1}};	/crx^{M+1} - x
-    sfps g = {{0, -1}, {1, 1}};		/crx - 1
+    sfps f = {{1, -1}, {M + 1, 1}};	// x^{M+1} - x
+    sfps g = {{0, -1}, {1, 1}};		// x - 1
 
     rep(i, N){
         Ans *= f;
@@ -246,8 +246,6 @@ $$
   > $$
   > (1 - rx)^{-d} = \sum_{n=0}^{\infty} {}_{n+d-1}C_{d-1}(rx)^n
   > $$
-  >
-  > が成り立つ。
 
   証明は[maspyさんのサイト](https:/crmaspypy.com/%E5%A4%9A%E9%A0%85%E5%BC%8F%E3%83%BB%E5%BD%A2%E5%BC%8F%E7%9A%84%E3%81%B9%E3%81%8D%E7%B4%9A%E6%95%B0%EF%BC%88%EF%BC%93%EF%BC%89%E7%B7%9A%E5%BD%A2%E6%BC%B8%E5%8C%96%E5%BC%8F%E3%81%A8%E5%BD%A2%E5%BC%8F)にあります。
 

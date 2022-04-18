@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+    });
+</script>
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+<html lang="en" >
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content="Hugo 0.68.3" />
+    
+    <link rel="canonical" href="https://Kyo-s-s.github.io/blog/posts/abc_248_c/" />
+    <meta name="description" content="A hugo site using Edidor. &lt;br/&gt;&lt;br/&gt; Ctrl&#43;B toggle sidebar. ">
+    
+
+    <title>ABC 248 C 考察 &middot; Kyo&#39;s blog</title>
+
+    <link rel="shortcut icon" href="https://Kyo-s-s.github.io/blog/images/favicon.ico" />
+
+    <link rel="stylesheet" href="https://Kyo-s-s.github.io/blog/css/main.css" />
+    
+        
+        <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/atom-one-light.min.css">
+        
+    
+    
+    
+    <link rel="stylesheet" href="https://Kyo-s-s.github.io/blog/css/custom.css">
+    
+</head>
+
+
+<body class="loading light-mode">
+    
+<div class="top">
+    <img class="logo" src="https://Kyo-s-s.github.io/blog/images/logo.svg" alt="logo" />
+</div>
+<div class="bottom">
+    <img class="logo" src="https://Kyo-s-s.github.io/blog/images/logo.svg" alt="logo" />
+</div>
+
+    <header class="header">
+    <ul class="menu clearfix control">
+        
+<li class="logo-container logo-light">
+    <a href="https://Kyo-s-s.github.io/blog/" class="btn logo-link">
+        <img class="logo" src="https://Kyo-s-s.github.io/blog/images/logo_light.svg" alt="logo" />
+    </a>
+</li>
+
+
+<li class="logo-container logo-default">
+    <a href="https://Kyo-s-s.github.io/blog/" class="btn logo-link">
+        <img class="logo" src="https://Kyo-s-s.github.io/blog/images/logo.svg" alt="logo" />
+    </a>
+</li>
+
+        
+        
+        
+        
+        <li 
+            class="">
+            <a class="btn" id="theme-switcher-button">
+                Article
+            </a>
+            <ul class="sub-menu control">
+                
+                <li class="">
+                    <a href="https://Kyo-s-s.github.io/blog/posts"
+                    
+                        class="btn "
+                    >Posts</a>
+                </li>
+                
+                <li class="">
+                    <a href="https://Kyo-s-s.github.io/blog/tags"
+                    
+                        class="btn "
+                    >Tags</a>
+                </li>
+                
+                <li class="">
+                    <a href="https://Kyo-s-s.github.io/blog/categories"
+                    
+                        class="btn "
+                    >Categories</a>
+                </li>
+                
+            </ul>
+        </li>
+        
+        
+        
+        
+        <li 
+            class="">
+            <a class="btn" id="theme-switcher-button">
+                View
+            </a>
+            <ul class="sub-menu control">
+                
+                <li class="">
+                    <a href="#"
+                    
+                        class="btn toggle-sidebar"
+                    >Toggle Sidebar</a>
+                </li>
+                
+            </ul>
+        </li>
+        
+        
+        
+        
+        <li  id="theme-switcher" 
+            class="">
+            <a class="btn" id="theme-switcher-button">
+                Theme
+            </a>
+            <ul class="sub-menu control">
+                
+                <li class="">
+                    <a href="#"
+                    
+                        
+                        data-theme="light" class="btn"
+                        
+                    >Light</a>
+                </li>
+                
+                <li class="">
+                    <a href="#"
+                    
+                        
+                        data-theme="dark" class="btn"
+                        
+                    >Dark</a>
+                </li>
+                
+                <li class="">
+                    <a href="#"
+                    
+                        
+                        data-theme="wild" class="btn"
+                        
+                    >Wild</a>
+                </li>
+                
+            </ul>
+        </li>
+        
+        
+    </ul>
+</header>
+
+    <div class="middle">
+        <nav class="sidebar">
+            <ul class="posts control">
+    
+    <li><a class="no-break btn" href='https://Kyo-s-s.github.io/blog/posts/abc_248_c/'><i class="icon icon-post"></i>ABC 248 C 考察</a></li>
+    
+    <li><a class="no-break btn" href='https://Kyo-s-s.github.io/blog/posts/abc_248/'><i class="icon icon-post"></i>ABC 248 参加期</a></li>
+    
+    <li><a class="no-break btn" href='https://Kyo-s-s.github.io/blog/posts/atcoderblue/'><i class="icon icon-post"></i>AtCoder 入青</a></li>
+    
+    <li><a class="no-break btn" href='https://Kyo-s-s.github.io/blog/posts/abc_247/'><i class="icon icon-post"></i>ABC 247 参加記</a></li>
+    
+    <li><a class="no-break btn" href='https://Kyo-s-s.github.io/blog/posts/arc_138/'><i class="icon icon-post"></i>ARC 138 参加記</a></li>
+    
+    <li><a class="no-break btn" href='https://Kyo-s-s.github.io/blog/posts/gcj_r1a_2022/'><i class="icon icon-post"></i>Google Code Jam Round 1A 2022 参加記</a></li>
+    
+    <li><a class="no-break btn" href='https://Kyo-s-s.github.io/blog/posts/lca/'><i class="icon icon-post"></i>LCA</a></li>
+    
+</ul>
+
+        </nav>
+        <main class="main">
+            <article class="article">
+    <h2 class="title"><a href='https://Kyo-s-s.github.io/blog/posts/abc_248_c/' class="btn">ABC 248 C 考察</a></h2>
+    <div class="article-meta clearfix">
+        <ul class="dates clearfix left control">
+            <li><i class="icon icon-date"></i></li>
+            <li class="publish-date">
+                <time datetime="2022.04.18">2022.04.18</time>
+            </li>
+        </ul>
+        
+        <ul class="article-categories clearfix left control">
+            <li><i class="icon icon-categories"></i></li>
+            
+            <li>
+                <a href="https://Kyo-s-s.github.io/blog/categories/%E7%AB%B6%E6%8A%80%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0/" class="btn">競技プログラミング</a>
+            </li>
+            
+        </ul>
+        
+        
+        <div class="article-meta-splitter clearfix"></div>
+        <ul class="article-tags clearfix control">
+            <li><i class="icon icon-tags"></i></li>
+            
+            <li>
+                <a href="https://Kyo-s-s.github.io/blog/tags/abc/" class="btn">ABC</a>
+            </li>
+            
+            <li>
+                <a href="https://Kyo-s-s.github.io/blog/tags/fps/" class="btn">FPS</a>
+            </li>
+            
+        </ul>
+        
+    </div>
+    <div class="content">
+        
+        <h3 id="問題httpscratcoderjpcontestsabc248tasksabc248_c"><a href="https:/cratcoder.jp/contests/abc248/tasks/abc248_c">問題</a></h3>
+<blockquote>
+<p>長さ$N$からなる数列$A = (A_1, \cdots, A_N)$であって、以下の条件を満たすものは何通りありますか？</p>
+<ul>
+<li>
+<p>$1 \leq A_i \leq M ~(1 \leq i \leq N)$</p>
+</li>
+<li>
+<p>$\displaystyle \sum_{i = 1}^N A_i \leq K$</p>
+</li>
+</ul>
+<p>ただし、答えは非常に大きくなることがあるので、答えを 998244353 で割った余りを求めてください。</p>
+<ul>
+<li>$1 \leq N, M \leq 50$</li>
+<li>$N \leq K \leq NM$</li>
+</ul>
+</blockquote>
+<h3 id="dp">DP</h3>
+<p>DPをします。この手のDPは割と頻出ですね。</p>
+<p>$dp[j]:=$総和が$j$になるような組み合わせの数　です。1つ前からのみ遷移するので、2つテーブルをもってswapしていく書き方をしています。計算量は$\Theta(NMK)$です。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#75715e">// https:/crgithub.com/Kyo-s-s/Kyo_s_s_Library/blob/main/lib/math/modint.cpp
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">using</span> Mint <span style="color:#f92672">=</span> Modint998244353;
+
+<span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>(){
+
+    ll N, M, K; cin <span style="color:#f92672">&gt;&gt;</span> N <span style="color:#f92672">&gt;&gt;</span> M <span style="color:#f92672">&gt;&gt;</span> K;
+
+    vector<span style="color:#f92672">&lt;</span>Mint<span style="color:#f92672">&gt;</span> dp(K <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>);
+    dp[<span style="color:#ae81ff">0</span>] <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>;
+
+    rep(i, N){
+        vector<span style="color:#f92672">&lt;</span>Mint<span style="color:#f92672">&gt;</span> pd(K <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>);
+        rep(k, K <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>){
+            <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">int</span> add <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>; add <span style="color:#f92672">&lt;=</span> M; add<span style="color:#f92672">++</span>){
+                <span style="color:#66d9ef">if</span>(k <span style="color:#f92672">+</span> add <span style="color:#f92672">&lt;</span> K <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>){
+                    pd[k <span style="color:#f92672">+</span> add] <span style="color:#f92672">+=</span> dp[k];
+                }
+            }
+        }
+        swap(dp, pd);
+    }
+
+    Mint ans <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+    rep(i, K <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>) ans <span style="color:#f92672">+=</span> dp[i];
+    cout <span style="color:#f92672">&lt;&lt;</span> ans <span style="color:#f92672">&lt;&lt;</span> endl;
+
+}
+</code></pre></div><h3 id="形式的冪級数">形式的冪級数</h3>
+<p>この問題は形式的冪級数を使って解くことができます。</p>
+<p>形式的冪級数については<a href="https:/crmaspypy.com/%E5%A4%9A%E9%A0%85%E5%BC%8F%E3%83%BB%E5%BD%A2%E5%BC%8F%E7%9A%84%E3%81%B9%E3%81%8D%E7%B4%9A%E6%95%B0%E6%95%B0%E3%81%88%E4%B8%8A%E3%81%92%E3%81%A8%E3%81%AE%E5%AF%BE%E5%BF%9C%E4%BB%98%E3%81%91">maspyさんのブログ</a>がとても分かりやすいです。</p>
+<p>この問題では、
+$$
+\sum_{k = 1}^K [x^k](x + x^2 + \cdots + x^M)^N
+$$
+を求めればよいです。</p>
+<blockquote>
+<p>$A_i$では$1, 2, \cdots, M$のいずれかを選ぶことができ、$A$の要素は$N$個です。これを形式的冪級数で表すと$(x + x^2 + \cdots + x^M)^N$となります。求めるのは総和が$K$以下になるものの数なので、$k = 1, \cdots, K$について$[x^k]$の値の総和が答えとなります。</p>
+</blockquote>
+<p>この方針のまま愚直に実装してみます。形式的冪級数ライブラリとして<a href="https:/cropt-cp.com/fps-implementation/">こちら(optさんのFPSライブラリ)</a>をお借りしました。そのままだと<code>rep</code>などのマクロが衝突してしまったので、適当に書き換えました。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;atcoder/all&gt;</span><span style="color:#75715e">
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">using</span> <span style="color:#66d9ef">namespace</span> atcoder;
+
+<span style="color:#75715e">// FormalPowerSeries
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">using</span> mint <span style="color:#f92672">=</span> modint998244353;
+<span style="color:#66d9ef">using</span> fps <span style="color:#f92672">=</span> FormalPowerSeries<span style="color:#f92672">&lt;</span>mint<span style="color:#f92672">&gt;</span>;
+<span style="color:#66d9ef">using</span> sfps <span style="color:#f92672">=</span> vector<span style="color:#f92672">&lt;</span>pair<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span>, mint<span style="color:#f92672">&gt;&gt;</span>;
+
+
+<span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>(){
+
+    ll N, M, K; cin <span style="color:#f92672">&gt;&gt;</span> N <span style="color:#f92672">&gt;&gt;</span> M <span style="color:#f92672">&gt;&gt;</span> K;
+
+    fps Ans <span style="color:#f92672">=</span> {<span style="color:#ae81ff">1</span>};
+    Ans.resize(K <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>);
+
+    sfps f;
+    rrep(i, M) f.pb({i, <span style="color:#ae81ff">1</span>});
+
+    rep(i, N){
+        Ans <span style="color:#f92672">*=</span> f;
+    }
+
+    mint ans <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+    rrep(i, K){
+        ans <span style="color:#f92672">+=</span> Ans[i].val();
+    }
+
+    cout <span style="color:#f92672">&lt;&lt;</span> ans.val() <span style="color:#f92672">&lt;&lt;</span> <span style="color:#e6db74">&#39;\n&#39;</span>;
+        
+}
+</code></pre></div><p>この書き方だと計算量は$\Theta(NMK)$であり、DP解と変わりません(実際に提出してみるとDPが14ms、この書き方が27msだったのでDPに比べ定数倍が重くなっています)。</p>
+<p>書き方を工夫すると、次のようになります。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;atcoder/all&gt;</span><span style="color:#75715e">
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">using</span> <span style="color:#66d9ef">namespace</span> atcoder;
+
+<span style="color:#75715e">// FormalPowerSeries
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">using</span> mint <span style="color:#f92672">=</span> modint998244353;
+<span style="color:#66d9ef">using</span> fps <span style="color:#f92672">=</span> FormalPowerSeries<span style="color:#f92672">&lt;</span>mint<span style="color:#f92672">&gt;</span>;
+<span style="color:#66d9ef">using</span> sfps <span style="color:#f92672">=</span> vector<span style="color:#f92672">&lt;</span>pair<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span>, mint<span style="color:#f92672">&gt;&gt;</span>;
+
+<span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>(){
+
+	ll N, M, K; cin <span style="color:#f92672">&gt;&gt;</span> N <span style="color:#f92672">&gt;&gt;</span> M <span style="color:#f92672">&gt;&gt;</span> K;
+
+    fps Ans <span style="color:#f92672">=</span> {<span style="color:#ae81ff">1</span>};
+    Ans.resize(K <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>);
+
+    sfps f <span style="color:#f92672">=</span> {{<span style="color:#ae81ff">1</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>}, {M <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">1</span>}};	<span style="color:#f92672">/</span>crx<span style="color:#f92672">^</span>{M<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>} <span style="color:#f92672">-</span> x
+    sfps g <span style="color:#f92672">=</span> {{<span style="color:#ae81ff">0</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>}, {<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">1</span>}};		<span style="color:#f92672">/</span>crx <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>
+
+    rep(i, N){
+        Ans <span style="color:#f92672">*=</span> f;
+        Ans <span style="color:#f92672">/=</span> g;
+    }
+
+    mint ans <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+    rrep(i, K){
+        ans <span style="color:#f92672">+=</span> Ans[i].val();
+    }
+
+    cout <span style="color:#f92672">&lt;&lt;</span> ans.val() <span style="color:#f92672">&lt;&lt;</span> <span style="color:#e6db74">&#39;\n&#39;</span>;
+    
+}
+</code></pre></div><p>$S = x + x^2 + \cdots + x^M$と置きます。$xS - S$を考えます。
+$$
+\begin{matrix}
+xS &amp; = &amp;   &amp;   &amp; x^2 &amp; + &amp; \cdots &amp; + &amp; x^M &amp; + &amp; x^{M + 1}\cr
+S  &amp; = &amp; x &amp; + &amp; x^2 &amp; + &amp; \cdots &amp; + &amp; x^M
+\end{matrix}
+$$</p>
+<p>$$
+\begin{matrix}
+(x - 1)S &amp;= x^{M+1} - x\cr
+S &amp;= \frac{x^{M+1} - x}{x - 1}
+\end{matrix}
+$$</p>
+<p>となるので、求めるべき値は
+$$
+\sum_{k = 1}^K [x^k] \left (\frac{x^{M+1} - x}{x - 1} \right )^N \tag{1}
+$$
+となります。疎な多項式を掛ける/割るは高速にできるので、より高速に動作します。実際に提出すると、8msでACできました。</p>
+<p>(多分$O(NK)$で動作している&hellip;と思います。間違っていたら教えてください&gt;&lt;)</p>
+<p>(1)の式をさらにいじっていきます。</p>
+<p>$$
+\begin{align}
+\left (\frac{x^{M+1} - x}{x - 1} \right )^N &amp;= \left \{ \frac{x(1-x^M)}{1-x} \right \}^N\cr
+&amp;= x^N(1-x^M)^N(1-x)^{-N}
+\end{align}
+$$</p>
+<p>となるので、求めるべき値は
+$$
+\sum_{k = 1}^K [x^k] ~x^N(1-x^M)(1-x)^{-N}
+$$
+となります。</p>
+<p><strong>$f(x)$の$0$次から$K$次の和は$f(x)/(1-x)$の$K$次となります。</strong></p>
+<blockquote>
+<p>${a_0 + (a_0+a_1)x + (a_0+a_1+a_2) x^2 + \cdots} (1 - x)$について考えます。分配法則を順にしていくと、
+$$
+\begin{matrix}
+&amp;a_0 &amp; - &amp; a_0 &amp; x\cr
+&amp;   &amp; + &amp; (a_0 + a_1) &amp; x &amp; - &amp; (a_0 + a_1) &amp; x^2\cr
+&amp;   &amp;   &amp;             &amp;   &amp; + &amp; (a_0 + a_1 + a_2) &amp; x^2 &amp; - &amp; (a_0 + a_1 + a_2) &amp; x^3\cr
+&amp;   &amp;   &amp;             &amp;   &amp;   &amp;  \vdots\cr
+=&amp; a_0 &amp; + &amp; a_1 &amp; x &amp; + &amp; a_2 &amp; x^2 &amp; + &amp; \cdots
+\end{matrix}
+$$
+となるので、
+$$
+a_0 + a_1x+a_2x^2+ \cdots = {a_0 + (a_0+a_1)x + (a_0+a_1+a_2) x^2 + \cdots} (1 - x)
+$$
+$$
+a_0 + (a_0+a_1)x + (a_0+a_1+a_2) x^2 + \cdots\ = \frac{a_0 + a_1x+a_2x^2+ \cdots}{1 - x}
+$$
+が成り立ちます。</p>
+<p><strong>※厳密な証明ではありません。適当にやったものです。</strong></p>
+</blockquote>
+<p>よって、
+$$
+[x^K] ~x^N (1 - x^M)^N (1 - x)^{-(N + 1)}
+$$
+が求められれば良いです。公式解説では、$x^N$で割って$[x^{K - N}] ~(1 - x^M)^N(1 - x)^{-(N+1)}$を求めています。</p>
+<p>以下、$[x^{K - N}] ~(1 - x^M)^N(1 - x)^{-(N+1)}$を求めます。</p>
+<p><code>Enumeration</code>は自作したものを使っています。使い方などは<a href="https:/crgithub.com/Kyo-s-s/Kyo_s_s_Library/blob/main/md/Enumeration.md">こちら</a>を見てください。</p>
+<ul>
+<li>
+<p>$(1 - x^M)^N$</p>
+<p>以下、$A$と呼びます。二項定理をします。ここで、求めるべきは$K - N$項目なので、それ以降については計算する必要はありません。</p>
+<blockquote>
+<p>$$
+(a + b)^n = \sum_{r = 0}^n {}_nC_r a^{n - r}b^{r}
+$$</p>
+</blockquote>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#75715e">// https:/crgithub.com/Kyo-s-s/Kyo_s_s_Library/blob/main/lib/math/Enumeration.cpp
+</span><span style="color:#75715e"></span>Enumeration<span style="color:#f92672">&lt;</span>mint<span style="color:#f92672">&gt;</span> enu;
+  
+vector<span style="color:#f92672">&lt;</span>mint<span style="color:#f92672">&gt;</span> A(K <span style="color:#f92672">-</span> N <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">0</span>); <span style="color:#75715e">// (1 - x^M)^N
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">int</span> r <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; r <span style="color:#f92672">&lt;=</span> N; r<span style="color:#f92672">++</span>){
+    <span style="color:#66d9ef">int</span> k <span style="color:#f92672">=</span> M <span style="color:#f92672">*</span> r;
+    mint a <span style="color:#f92672">=</span> enu.nCk(N, r) <span style="color:#f92672">*</span> (r <span style="color:#f92672">%</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">?</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span> <span style="color:#f92672">:</span> <span style="color:#ae81ff">1</span>);
+    <span style="color:#66d9ef">if</span>(K <span style="color:#f92672">-</span> N <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">&gt;</span> k) A[k] <span style="color:#f92672">=</span> a;
+}
+</code></pre></div><p>これで$K - N$項以下の$(1 - x^M)^N$を求めることができました。</p>
+</li>
+<li>
+<p>$(1 - x)^{-(N + 1)}$</p>
+<p>以下、$B$と呼びます。負の二項定理を使います。</p>
+<blockquote>
+<p>$$
+(1 - rx)^{-d} = \sum_{n=0}^{\infty} {}_{n+d-1}C_{d-1}(rx)^n
+$$</p>
+<p>が成り立つ。</p>
+</blockquote>
+<p>証明は<a href="https:/crmaspypy.com/%E5%A4%9A%E9%A0%85%E5%BC%8F%E3%83%BB%E5%BD%A2%E5%BC%8F%E7%9A%84%E3%81%B9%E3%81%8D%E7%B4%9A%E6%95%B0%EF%BC%88%EF%BC%93%EF%BC%89%E7%B7%9A%E5%BD%A2%E6%BC%B8%E5%8C%96%E5%BC%8F%E3%81%A8%E5%BD%A2%E5%BC%8F">maspyさんのサイト</a>にあります。</p>
+<p>これを$K - N$項目までもとめればよいです。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp">vector<span style="color:#f92672">&lt;</span>mint<span style="color:#f92672">&gt;</span> B(K <span style="color:#f92672">-</span> N <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">0</span>); <span style="color:#75715e">// (1 - x)^{-(N + 1)}
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">int</span> d <span style="color:#f92672">=</span> N <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>;
+<span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">int</span> n <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; n <span style="color:#f92672">&lt;</span> K <span style="color:#f92672">-</span> N <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>; n<span style="color:#f92672">++</span>){
+    B[n] <span style="color:#f92672">=</span> enu.nCk(n <span style="color:#f92672">+</span> d <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>, d <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>);
+}
+</code></pre></div></li>
+</ul>
+<p>あとは、$[x^{K - N}]~AB$を求めればよいです。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;atcoder/all&gt;</span><span style="color:#75715e">
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">using</span> <span style="color:#66d9ef">namespace</span> atcoder;
+
+<span style="color:#66d9ef">using</span> mint <span style="color:#f92672">=</span> modint998244353;
+
+<span style="color:#75715e">// https:/crgithub.com/Kyo-s-s/Kyo_s_s_Library/blob/main/lib/math/Enumeration.cpp
+</span><span style="color:#75715e"></span>
+<span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>(){
+
+    ll N, M, K; cin <span style="color:#f92672">&gt;&gt;</span> N <span style="color:#f92672">&gt;&gt;</span> M <span style="color:#f92672">&gt;&gt;</span> K;
+
+    Enumeration<span style="color:#f92672">&lt;</span>mint<span style="color:#f92672">&gt;</span> enu;
+    
+    vector<span style="color:#f92672">&lt;</span>mint<span style="color:#f92672">&gt;</span> A(K <span style="color:#f92672">-</span> N <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">0</span>); <span style="color:#75715e">// (1 - x^M)^N
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">int</span> r <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; r <span style="color:#f92672">&lt;=</span> N; r<span style="color:#f92672">++</span>){
+        <span style="color:#66d9ef">int</span> k <span style="color:#f92672">=</span> M <span style="color:#f92672">*</span> r;
+        mint a <span style="color:#f92672">=</span> enu.nCk(N, r) <span style="color:#f92672">*</span> (r <span style="color:#f92672">%</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">?</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span> <span style="color:#f92672">:</span> <span style="color:#ae81ff">1</span>);
+        <span style="color:#66d9ef">if</span>(K <span style="color:#f92672">-</span> N <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">&gt;</span> k) A[k] <span style="color:#f92672">=</span> a;
+    }
+
+    vector<span style="color:#f92672">&lt;</span>mint<span style="color:#f92672">&gt;</span> B(K <span style="color:#f92672">-</span> N <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">0</span>); <span style="color:#75715e">// (1 - x)^{-(N + 1)}
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">int</span> d <span style="color:#f92672">=</span> N <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>;
+    <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">int</span> n <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; n <span style="color:#f92672">&lt;</span> K <span style="color:#f92672">-</span> N <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>; n<span style="color:#f92672">++</span>){
+        B[n] <span style="color:#f92672">=</span> enu.nCk(n <span style="color:#f92672">+</span> d <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>, d <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>);
+    }
+
+    mint ans <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+    <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; i <span style="color:#f92672">&lt;=</span> K <span style="color:#f92672">-</span> N; i<span style="color:#f92672">++</span>){
+        ans <span style="color:#f92672">+=</span> A[i] <span style="color:#f92672">*</span> B[K <span style="color:#f92672">-</span> N <span style="color:#f92672">-</span> i];
+    }
+
+    cout <span style="color:#f92672">&lt;&lt;</span> ans.val() <span style="color:#f92672">&lt;&lt;</span> endl;
+    
+}
+</code></pre></div><p>このコードでACすることができます！計算量は$O(K)$となり、DPより高速に解を求めることができました。</p>
+
+        
+    </div>
+
+</article>
+<section class="comment">
+    <p class="local-info">
+        Comment is disabled to avoid unwanted discussions from 'localhost:1313' on your Disqus
+        account...
+    </p>
+    <div id="disqus_thread"></div>
+</section>
+<script type="text/javascript">
+
+    (function () {
+        if (window.location.hostname == "localhost") {
+            return
+        }
+        document.querySelector('.local-info').classList.add('hide')
+
+        let dsq = document.createElement('script')
+        dsq.type = 'text/javascript'
+        dsq.async = true
+        let disqus_shortname = 'your disqus short name'
+        dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq)
+    })()
+</script>
+
+
+        </main>
+    </div>
+    <footer class="footer clearfix">
+    <ul class="control social clearfix">
+        <li><a class="author btn" href="#">Kyo</a></li>
+        
+        
+        
+        
+        
+        
+        
+        
+        <li>
+            <a class="icon-link btn" href="https://github.com/Kyo-s-s"><i class="icon github"></i></a>
+        </li>
+        
+        
+        
+        <li>
+            <a class="icon-link btn" href="https://twitter.com/Kyo_s_s"><i class="icon twitter"></i></a>
+        </li>
+        
+        
+        <li>
+            <a class="icon-link btn" href="https://Kyo-s-s.github.io/blog/index.xml" type="application/rss+xml" title="rss">
+                <i class="rss icon"></i></a>
+        </li>
+    </ul>
+
+    <ul class="control status clearfix">
+        <li><a href="#" class="btn">Posts:
+                8</a>
+        </li>
+        <li><a href="#" class="btn">Pages:
+                0</a></li>
+        <li><a href="#" class="btn">en</a></li>
+        <li><a href="https://gohugo.io" class="btn">Hugo: 0.68.3</a></li>
+        <li><a href="https://github.com/sfengyuan/edidor" class="btn">Theme: Edidor</a></li>
+        <li>
+            
+                <a href="#" class="btn">Last build: <time
+                    datetime="2020-03-25T06:15:45Z">2020-03-25T06:15:45Z</time>
+                </a>
+            
+        </li>
+    </ul>
+</footer>
+<div class="dialog">
+    <div class="wrapper">
+        <div class="clearfix"><button class="btn close-dialog">X</button></div>
+        <header>
+            <h1 class="title">Theme Name</h1>
+        </header>
+        <main>
+            <div class="clearfix">
+                <label for="theme-name">
+                    <p>Only English Character, space, hyphen are allowed!</p>
+                    <p>Valid name examples: "custom", "fantastic theme", "my-theme"</p>
+                    <p>Invalid name examles: "我的主题", ":)", "123"</p>
+                </label>
+                <input type="text" name="theme-name" id="theme-name">
+            </div>
+            <div class="clearfix">
+                <button class="btn export">Export</button>
+            </div>
+
+        </main>
+        <footer></footer>
+    </div>
+</div>
+
+    <script src="https://Kyo-s-s.github.io/blog/js/main.js"></script>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
+
+<script>hljs.initHighlightingOnLoad();</script>
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'your ga id', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</body>
+
+</html>

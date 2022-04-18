@@ -6,7 +6,7 @@
     <description>Recent content in Tags on Kyo&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 17 Apr 2022 23:42:56 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 18 Apr 2022 14:04:05 +0900</lastBuildDate>
     
 	<atom:link href="https://Kyo-s-s.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,9 +14,18 @@
     <item>
       <title>ABC</title>
       <link>https://Kyo-s-s.github.io/blog/tags/abc/</link>
-      <pubDate>Sun, 17 Apr 2022 23:42:56 +0900</pubDate>
+      <pubDate>Mon, 18 Apr 2022 14:04:05 +0900</pubDate>
       
       <guid>https://Kyo-s-s.github.io/blog/tags/abc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>FPS</title>
+      <link>https://Kyo-s-s.github.io/blog/tags/fps/</link>
+      <pubDate>Mon, 18 Apr 2022 14:04:05 +0900</pubDate>
+      
+      <guid>https://Kyo-s-s.github.io/blog/tags/fps/</guid>
       <description></description>
     </item>
     

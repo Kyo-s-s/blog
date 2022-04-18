@@ -19,13 +19,13 @@ AtCoderに初めて参加したのが2021/4/24のABC199なので、1年で青ま
 
 過去問をときました。
 
-![Achievement](/blog/images/AtCoderBlue/Achievement.jpg)
+![Achievement](/images/AtCoderBlue/Achievement.jpg)
 
 水色になったときのAC数は638だったので、新たに454問解いたことになります。Streakを伸ばすことを目標に毎日最低でも1問解く、ということを決めていました。たまに時間が取れずに灰diffを1問だけ解く、みたいなことをしていましたが...
 
 Difficulty Piesはこんな感じです。
 
-![DifficultyPies](/blog/images/AtCoderBlue/DifficultyPies.jpg)
+![DifficultyPies](/images/AtCoderBlue/DifficultyPies.jpg)
 
 試験管ではない水diffはほぼ埋めました(いくつか解いていないものもあります)。青diffはまだ全然解いていないので、今後もどんどん解いていこうと思います。
 

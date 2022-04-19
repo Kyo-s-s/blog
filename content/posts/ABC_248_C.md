@@ -7,7 +7,7 @@ tags: ["ABC", "FPS"]
 ---
 
 
-### [Dice Sum](https:/cratcoder.jp/contests/abc248/tasks/abc248_c)
+### [Dice Sum](https://atcoder.jp/contests/abc248/tasks/abc248_c)
 
 > 長さ$N$からなる数列$A = (A_1, \cdots, A_N)$であって、以下の条件を満たすものは何通りありますか？
 >
@@ -27,7 +27,7 @@ DPをします。この手のDPは割と頻出ですね。
 $dp[j]:=$総和が$j$になるような組み合わせの数　です。1つ前からのみ遷移するので、2つテーブルをもってswapしていく書き方をしています。計算量は$\Theta(NMK)$です。
 
 ```cpp
-// https:/crgithub.com/Kyo-s-s/Kyo_s_s_Library/blob/main/lib/math/modint.cpp
+// https://github.com/Kyo-s-s/Kyo_s_s_Library/blob/main/lib/math/modint.cpp
 using Mint = Modint998244353;
 
 int main(){
@@ -60,7 +60,7 @@ int main(){
 
 この問題は形式的冪級数を使って解くことができます。
 
-形式的冪級数については[maspyさんのブログ](https:/crmaspypy.com/%E5%A4%9A%E9%A0%85%E5%BC%8F%E3%83%BB%E5%BD%A2%E5%BC%8F%E7%9A%84%E3%81%B9%E3%81%8D%E7%B4%9A%E6%95%B0%E6%95%B0%E3%81%88%E4%B8%8A%E3%81%92%E3%81%A8%E3%81%AE%E5%AF%BE%E5%BF%9C%E4%BB%98%E3%81%91)がとても分かりやすいです。
+形式的冪級数については[maspyさんのブログ](https://maspypy.com/%E5%A4%9A%E9%A0%85%E5%BC%8F%E3%83%BB%E5%BD%A2%E5%BC%8F%E7%9A%84%E3%81%B9%E3%81%8D%E7%B4%9A%E6%95%B0%E6%95%B0%E3%81%88%E4%B8%8A%E3%81%92%E3%81%A8%E3%81%AE%E5%AF%BE%E5%BF%9C%E4%BB%98%E3%81%91)がとても分かりやすいです。
 
 この問題では、
 $$
@@ -70,7 +70,7 @@ $$
 
 >$A_i$では$1, 2, \cdots, M$のいずれかを選ぶことができ、$A$の要素は$N$個です。これを形式的冪級数で表すと$(x + x^2 + \cdots + x^M)^N$となります。求めるのは総和が$K$以下になるものの数なので、$k = 1, \cdots, K$について$[x^k]$の値の総和が答えとなります。
 
-この方針のまま愚直に実装してみます。形式的冪級数ライブラリとして[こちら(optさんのFPSライブラリ)](https:/cropt-cp.com/fps-implementation/)をお借りしました。そのままだと`rep`などのマクロが衝突してしまったので、適当に書き換えました。
+この方針のまま愚直に実装してみます。形式的冪級数ライブラリとして[こちら(optさんのFPSライブラリ)](https://opt-cp.com/fps-implementation/)をお借りしました。そのままだと`rep`などのマクロが衝突してしまったので、適当に書き換えました。
 
 ```cpp
 #include <atcoder/all>
@@ -215,7 +215,7 @@ $$
 
 以下、$[x^{K - N}] ~(1 - x^M)^N(1 - x)^{-(N+1)}$を求めます。
 
-`Enumeration`は自作したものを使っています。使い方などは[こちら](https:/crgithub.com/Kyo-s-s/Kyo_s_s_Library/blob/main/md/Enumeration.md)を見てください。
+`Enumeration`は自作したものを使っています。使い方などは[こちら](https://github.com/Kyo-s-s/Kyo_s_s_Library/blob/main/md/Enumeration.md)を見てください。
 
 - $(1 - x^M)^N$
 
@@ -226,7 +226,7 @@ $$
   > $$
 
   ```cpp
-  // https:/crgithub.com/Kyo-s-s/Kyo_s_s_Library/blob/main/lib/math/Enumeration.cpp
+  // https://github.com/Kyo-s-s/Kyo_s_s_Library/blob/main/lib/math/Enumeration.cpp
   Enumeration<mint> enu;
   
   vector<mint> A(K - N + 1, 0); // (1 - x^M)^N
@@ -247,7 +247,7 @@ $$
   > (1 - rx)^{-d} = \sum_{n=0}^{\infty} {}_{n+d-1}C_{d-1}(rx)^n
   > $$
 
-  証明は[maspyさんのサイト](https:/crmaspypy.com/%E5%A4%9A%E9%A0%85%E5%BC%8F%E3%83%BB%E5%BD%A2%E5%BC%8F%E7%9A%84%E3%81%B9%E3%81%8D%E7%B4%9A%E6%95%B0%EF%BC%88%EF%BC%93%EF%BC%89%E7%B7%9A%E5%BD%A2%E6%BC%B8%E5%8C%96%E5%BC%8F%E3%81%A8%E5%BD%A2%E5%BC%8F)にあります。
+  証明は[maspyさんのサイト](https://maspypy.com/%E5%A4%9A%E9%A0%85%E5%BC%8F%E3%83%BB%E5%BD%A2%E5%BC%8F%E7%9A%84%E3%81%B9%E3%81%8D%E7%B4%9A%E6%95%B0%EF%BC%88%EF%BC%93%EF%BC%89%E7%B7%9A%E5%BD%A2%E6%BC%B8%E5%8C%96%E5%BC%8F%E3%81%A8%E5%BD%A2%E5%BC%8F)にあります。
 
   これを$K - N$項目までもとめればよいです。
 
@@ -267,7 +267,7 @@ using namespace atcoder;
 
 using mint = modint998244353;
 
-// https:/crgithub.com/Kyo-s-s/Kyo_s_s_Library/blob/main/lib/math/Enumeration.cpp
+// https://github.com/Kyo-s-s/Kyo_s_s_Library/blob/main/lib/math/Enumeration.cpp
 
 int main(){
 

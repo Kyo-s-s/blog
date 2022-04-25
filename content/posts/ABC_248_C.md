@@ -1,7 +1,7 @@
 ---
 title: "ABC 248 C Dice Sum 考察"
 date: 2022-04-18T14:04:05+09:00
-draft: true
+draft: false
 categories: ["競技プログラミング"]
 tags: ["ABC", "FPS"]
 ---

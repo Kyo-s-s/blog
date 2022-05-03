@@ -16,7 +16,7 @@ hasCJKLanguage = true
 
 
 # ----- feel free change these settings, those are not tied to this theme --
-paginate = 5
+paginate = 20
 enableEmoji = true
 
 # to have better preview

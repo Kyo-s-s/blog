@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Kyo&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 04 May 2022 01:04:05 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 15 May 2022 17:19:15 +0900</lastBuildDate>
     
 	<atom:link href="https://Kyo-s-s.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>ABC 251 参加記</title>
+      <link>https://Kyo-s-s.github.io/blog/posts/abc_251/</link>
+      <pubDate>Sun, 15 May 2022 17:19:15 +0900</pubDate>
+      
+      <guid>https://Kyo-s-s.github.io/blog/posts/abc_251/</guid>
+      <description>90分6完(1ペナ)で382位、パフォーマンスは1869でした。EでDPの遷移がごちゃごちゃになってしまったりFがよくわからなかったりして大</description>
+    </item>
     
     <item>
       <title>桁DPを理解する</title>

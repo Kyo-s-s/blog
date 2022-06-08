@@ -6,10 +6,19 @@
     <description>Recent content in ABC on Kyo&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 23 May 2022 14:56:02 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 08 Jun 2022 16:54:23 +0900</lastBuildDate>
     
 	<atom:link href="https://Kyo-s-s.github.io/blog/tags/abc/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>ABC 253 参加記</title>
+      <link>https://Kyo-s-s.github.io/blog/posts/abc_253/</link>
+      <pubDate>Wed, 08 Jun 2022 16:54:23 +0900</pubDate>
+      
+      <guid>https://Kyo-s-s.github.io/blog/posts/abc_253/</guid>
+      <description>88分6完(5ペナ)で493位、パフォーマンスは1843でした。レートが1700を超えました！(次の日のARCで落ちましたが&amp;hellip;</description>
+    </item>
     
     <item>
       <title>ABC 252 参加記</title>
@@ -30,7 +39,7 @@
     </item>
     
     <item>
-      <title>ABC 249 参加期</title>
+      <title>ABC 249 参加記</title>
       <link>https://Kyo-s-s.github.io/blog/posts/abc_249/</link>
       <pubDate>Mon, 25 Apr 2022 15:36:43 +0900</pubDate>
       
@@ -48,7 +57,7 @@
     </item>
     
     <item>
-      <title>ABC 248 参加期</title>
+      <title>ABC 248 参加記</title>
       <link>https://Kyo-s-s.github.io/blog/posts/abc_248/</link>
       <pubDate>Sun, 17 Apr 2022 23:42:56 +0900</pubDate>
       

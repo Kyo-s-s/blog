@@ -6,10 +6,19 @@
     <description>Recent content in ABC on Kyo&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 08 Jun 2022 16:54:23 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 12 Jun 2022 17:11:23 +0900</lastBuildDate>
     
 	<atom:link href="https://Kyo-s-s.github.io/blog/tags/abc/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>ABC 255 参加記</title>
+      <link>https://Kyo-s-s.github.io/blog/posts/abc_255/</link>
+      <pubDate>Sun, 12 Jun 2022 17:11:23 +0900</pubDate>
+      
+      <guid>https://Kyo-s-s.github.io/blog/posts/abc_255/</guid>
+      <description>クエー 118分6完(5ペナ)で363位、パフォーマンスは1950でした。青2に戻れました！！ A You should output ARC, though this is ABC. 問題 整数$R, C$を$2$行$</description>
+    </item>
     
     <item>
       <title>ABC 253 参加記</title>

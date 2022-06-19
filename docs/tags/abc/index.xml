@@ -6,10 +6,19 @@
     <description>Recent content in ABC on Kyo&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 12 Jun 2022 17:11:23 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 19 Jun 2022 16:31:28 +0900</lastBuildDate>
     
 	<atom:link href="https://Kyo-s-s.github.io/blog/tags/abc/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>ABC 256 参加記</title>
+      <link>https://Kyo-s-s.github.io/blog/posts/abc_256/</link>
+      <pubDate>Sun, 19 Jun 2022 16:31:28 +0900</pubDate>
+      
+      <guid>https://Kyo-s-s.github.io/blog/posts/abc_256/</guid>
+      <description>34分5完でパフォーマンスは1893でした。Fの解法を思いついて60分時点でコーディングできたのですが、結局TLEが消えずに通せませんでした</description>
+    </item>
     
     <item>
       <title>ABC 255 参加記</title>

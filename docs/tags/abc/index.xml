@@ -6,10 +6,19 @@
     <description>Recent content in ABC on Kyo&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 19 Jun 2022 16:31:28 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 02 Aug 2022 23:23:53 +0900</lastBuildDate>
     
 	<atom:link href="https://Kyo-s-s.github.io/blog/tags/abc/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>ABC 262 参加記</title>
+      <link>https://Kyo-s-s.github.io/blog/posts/abc_262/</link>
+      <pubDate>Tue, 02 Aug 2022 23:23:53 +0900</pubDate>
+      
+      <guid>https://Kyo-s-s.github.io/blog/posts/abc_262/</guid>
+      <description>42分5完で273位、パフォーマンスは2101でした。+57しましたが、前日に-68しているので実は負けです(？) A World Cup 問題 $Y$以上で$4</description>
+    </item>
     
     <item>
       <title>ABC 256 参加記</title>

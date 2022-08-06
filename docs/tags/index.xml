@@ -6,19 +6,10 @@
     <description>Recent content in Tags on Kyo&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 02 Aug 2022 23:23:53 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 09 Jul 2022 12:42:28 +0900</lastBuildDate>
     
 	<atom:link href="https://Kyo-s-s.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>ABC</title>
-      <link>https://Kyo-s-s.github.io/blog/tags/abc/</link>
-      <pubDate>Tue, 02 Aug 2022 23:23:53 +0900</pubDate>
-      
-      <guid>https://Kyo-s-s.github.io/blog/tags/abc/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title>ICPC</title>
@@ -26,6 +17,15 @@
       <pubDate>Sat, 09 Jul 2022 12:42:28 +0900</pubDate>
       
       <guid>https://Kyo-s-s.github.io/blog/tags/icpc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ABC</title>
+      <link>https://Kyo-s-s.github.io/blog/tags/abc/</link>
+      <pubDate>Sun, 19 Jun 2022 16:31:28 +0900</pubDate>
+      
+      <guid>https://Kyo-s-s.github.io/blog/tags/abc/</guid>
       <description></description>
     </item>
     

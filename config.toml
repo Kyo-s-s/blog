@@ -5,7 +5,6 @@ AuthorName = "Kyo"
 
 canonifyurls = true
 
-publishDir = "docs"
 # place your logo file to ./static/images to set logo
 
 # i18n is not completed yet, help is appreciated.

@@ -226,7 +226,7 @@
 <h3 id="a-world-cuphttpsatcoderjpcontestsabc262tasksabc262_a">A <a href="https://atcoder.jp/contests/abc262/tasks/abc262_a">World Cup</a></h3>
 <h4 id="問題">問題</h4>
 <blockquote>
-<p>$Y$以上で$4$で割ったあまりが$2$である数を求めてね。</p>
+<p>$Y$以上で$4$で割ったあまりが$2$である最小の数を求めてね。</p>
 <ul>
 <li>$2000 \leq Y \leq 3000$</li>
 </ul>
@@ -392,15 +392,15 @@
 <p>$K = 1$の時、各頂点のうち出次数が偶数のものの個数です。$K=2$の時、次のようにすると答えが導けます。</p>
 <pre><code>// 頂点iの出次数をB[i]とする
 for(x = 0; x &lt; N; x++){
-	for(y = 0; y &lt; N; y++){
+	for(y = 0; y &lt; N; y++) if(x != y){
 		// xとyを赤に塗ったものを考える
 		cnt = B[x] + B[y] - 2 * (xとyをつなぐパスがあるか？あるなら1, ないなら0);
 		if(cnt % 2 == 0) ans++;
 	}
 }
-</code></pre><p>重複のない$R = {x_1,\ldots, x_K}~(0 \leq x_i &lt; N)$に対して、$R$に属する頂点をすべて赤に塗ったとすると、前のコードの<code>cnt</code>は、
+</code></pre><p>重複のない$R = \{ x_1,\ldots, x_K \} ~(0 \leq x_i &lt; N)$に対して、$R$に属する頂点をすべて赤に塗ったとすると、前のコードの<code>cnt</code>は、
 $$
-cnt = \sum_{i = 0}^K B[i] - 2\times(Rに属する頂点のみからなるグラフの辺の本数)
+cnt = \sum_{i = 0}^K B_{x_i} - 2\times(Rに属する頂点のみからなるグラフの辺の本数)
 $$
 と書くことができます。興味があるのは<code>cnt</code>の偶奇のみなので、結局出次数の総和が偶数であればよいということがわかります。</p>
 <p>これにより、この問題は次のように言い換えることができます。</p>

@@ -45,7 +45,7 @@ googleAnalytics = "your ga id"
     isHighlightCode = true
     # set true need to use custom js
     useCustomSyntaxHighlight = false
-    customJs = []
+    customJs = ["add-on.js"]
     customCss = ["custom.css"]
     mode = "light"
 # menubar setting, you can change url, weight and name except the 'Theme'.

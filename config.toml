@@ -19,7 +19,7 @@ paginate = 20
 enableEmoji = true
 
 # to have better preview
-buildDrafts = "true"
+buildDrafts = "false"
 # helpful if you want to edit the site or theme code
 disableFastRender = true
 # --------------------------------------------------------------------------

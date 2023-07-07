@@ -1,0 +1,367 @@
+<!doctype html><html lang=en>
+<head>
+<meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge,chrome=1">
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=generator content="Hugo 0.91.2">
+<link rel=canonical href=https://Kyo-s-s.github.io/blog/posts/tsp/>
+<meta name=description content="A hugo site using Edidor. <br/><br/> Ctrl+B toggle sidebar. ">
+<title>巡回セールスマン問題って何？ &#183; Kyo's blog</title>
+<link rel="shortcut icon" href=https://Kyo-s-s.github.io/blog/images/favicon.ico>
+<link rel=stylesheet href=https://Kyo-s-s.github.io/blog/css/main.css>
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/atom-one-light.min.css>
+<link rel=stylesheet href=https://Kyo-s-s.github.io/blog/css/custom.css>
+</head>
+<body class="loading light-mode">
+<div class=top>
+<img class=logo src=https://Kyo-s-s.github.io/blog/images/logo.svg alt=logo>
+</div>
+<div class=bottom>
+<img class=logo src=https://Kyo-s-s.github.io/blog/images/logo.svg alt=logo>
+</div>
+<header class=header>
+<ul class="menu clearfix control">
+<li class="logo-container logo-light">
+<a href=https://Kyo-s-s.github.io/blog/ class="btn logo-link">
+<img class=logo src=https://Kyo-s-s.github.io/blog/images/logo_light.svg alt=logo>
+</a>
+</li>
+<li class="logo-container logo-default">
+<a href=https://Kyo-s-s.github.io/blog/ class="btn logo-link">
+<img class=logo src=https://Kyo-s-s.github.io/blog/images/logo.svg alt=logo>
+</a>
+</li>
+<li>
+<a class=btn id=theme-switcher-button>
+Article
+</a>
+<ul class="sub-menu control">
+<li>
+<a href=https://Kyo-s-s.github.io/blog/posts class=btn>Posts</a>
+</li>
+<li>
+<a href=https://Kyo-s-s.github.io/blog/tags class=btn>Tags</a>
+</li>
+<li>
+<a href=https://Kyo-s-s.github.io/blog/categories class=btn>Categories</a>
+</li>
+</ul>
+</li>
+<li>
+<a class=btn id=theme-switcher-button>
+View
+</a>
+<ul class="sub-menu control">
+<li>
+<a href=# class="btn toggle-sidebar">Toggle Sidebar</a>
+</li>
+</ul>
+</li>
+<li id=theme-switcher>
+<a class=btn id=theme-switcher-button>
+Theme
+</a>
+<ul class="sub-menu control">
+<li>
+<a href=# data-theme=light class=btn>Light</a>
+</li>
+<li>
+<a href=# data-theme=dark class=btn>Dark</a>
+</li>
+<li>
+<a href=# data-theme=wild class=btn>Wild</a>
+</li>
+</ul>
+</li>
+</ul>
+<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.css integrity=sha384-yFRtMMDnQtDRO8rLpMIKrtPCD5jdktao2TV19YiZYWMDkUR5GQZR/NOVTdquEx1j crossorigin=anonymous>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.js integrity=sha384-9Nhn55MVVN0/4OFx7EE5kpFBPsEMZxKTCnA+4fqDmg12eCTqGi6+BB2LjY8brQxJ crossorigin=anonymous></script>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/contrib/auto-render.min.js integrity=sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI crossorigin=anonymous></script>
+<script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"\\[",right:"\\]",display:!0},{left:"$",right:"$",display:!1},{left:"\\(",right:"\\)",display:!1}]})})</script>
+</header>
+<div class=middle>
+<nav class=sidebar>
+<ul class="posts control">
+<li><a class="no-break btn" href=https://Kyo-s-s.github.io/blog/posts/icpc2023/><i class="icon icon-post"></i>ICPC2023 参加記</a></li>
+<li><a class="no-break btn" href=https://Kyo-s-s.github.io/blog/posts/tsp/><i class="icon icon-post"></i>巡回セールスマン問題って何？</a></li>
+<li><a class="no-break btn" href=https://Kyo-s-s.github.io/blog/posts/ahc_018/><i class="icon icon-post"></i>AHC 018 参加期</a></li>
+<li><a class="no-break btn" href=https://Kyo-s-s.github.io/blog/posts/ahc_014/><i class="icon icon-post"></i>AHC 014 参加記</a></li>
+<li><a class="no-break btn" href=https://Kyo-s-s.github.io/blog/posts/abc_264/><i class="icon icon-post"></i>ABC 264 参加記</a></li>
+<li><a class="no-break btn" href=https://Kyo-s-s.github.io/blog/posts/ahc_013/><i class="icon icon-post"></i>AHC 013 参加記</a></li>
+<li><a class="no-break btn" href=https://Kyo-s-s.github.io/blog/posts/abc_262/><i class="icon icon-post"></i>ABC 262 参加記</a></li>
+<li><a class="no-break btn" href=https://Kyo-s-s.github.io/blog/posts/icpc2022/><i class="icon icon-post"></i>ICPC2022 参加記</a></li>
+<li><a class="no-break btn" href=https://Kyo-s-s.github.io/blog/posts/abc_256/><i class="icon icon-post"></i>ABC 256 参加記</a></li>
+<li><a class="no-break btn" href=https://Kyo-s-s.github.io/blog/posts/abc_255/><i class="icon icon-post"></i>ABC 255 参加記</a></li>
+</ul>
+</nav>
+<main class=main>
+<article class=article>
+<h2 class=title><a href=https://Kyo-s-s.github.io/blog/posts/tsp/ class=btn>巡回セールスマン問題って何？</a></h2>
+<div class="article-meta clearfix">
+<ul class="dates clearfix left control">
+<li><i class="icon icon-date"></i></li>
+<li class=publish-date>
+<time datetime=2023.04.16>2023.04.16</time>
+</li>
+</ul>
+<ul class="article-categories clearfix left control">
+<li><i class="icon icon-categories"></i></li>
+<li>
+<a href=https://Kyo-s-s.github.io/blog/categories/%E7%AB%B6%E6%8A%80%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0/ class=btn>競技プログラミング</a>
+</li>
+</ul>
+<div class="article-meta-splitter clearfix"></div>
+<ul class="article-tags clearfix control">
+<li><i class="icon icon-tags"></i></li>
+<li>
+<a href=https://Kyo-s-s.github.io/blog/tags/dp/ class=btn>DP</a>
+</li>
+<li>
+<a href=https://Kyo-s-s.github.io/blog/tags/heuristic/ class=btn>Heuristic</a>
+</li>
+</ul>
+</div>
+<div class=content>
+<p>このブログは芝浦工業大学数理科学研究会の新入生に向けて作成された記事です。
+誤り・不備があった場合、Twitter等でご指摘いただけると幸いです。</p>
+<h2 id=巡回セールスマン問題って>巡回セールスマン問題って？</h2>
+<blockquote class=twitter-tweet><p lang=ja dir=ltr>ついに出た巡回セールスマン問題！<a href="https://twitter.com/hashtag/%E3%83%AA%E3%82%B1%E6%81%8B?src=hash&ref_src=twsrc%5Etfw">#リケ恋</a> <a href=https://t.co/rJTPxIhXyI>pic.twitter.com/rJTPxIhXyI</a></p>&mdash; ＼最新15巻発売!／【公式】マンガ＆アニメ「理系が恋に落ちたので証明してみた。」 (@rikeigakoini) <a href="https://twitter.com/rikeigakoini/status/1220737840675356672?ref_src=twsrc%5Etfw">January 24, 2020</a></blockquote>
+<script async src=https://platform.twitter.com/widgets.js></script>
+<p>これ以上知りたいので自分で勉強します。</p>
+<p>巡回セールスマン問題(Traveling Salesman Problem)とは、与えられた都市の集合に対して、全ての都市を一度だけ訪れ、出発点に戻る最短経路を求める問題です。
+具体的に、都市間の距離が与えられるので、全ての都市を一度だけ訪れ出発点に戻る最短経路を求める問題です。</p>
+<p>$N$個の都市があるとき、全ての都市を巡回して戻ってくるルートは $N!$ 通り存在します。
+$N=10$ のときは $10! = 3628800$ 通り、$N=20$ のときは $20! = 2432902008176640000$ 通りと、
+都市の数が増えるにつれて、全ての経路の数が階乗の形で増加してしまうため、最適解を求めることが非常に困難な問題です。
+愚直に全ての経路を試して最短経路を求めようとすると、 $\Omega(N!)$ 掛かってしまいます。</p>
+<p>この問題は、輸送や物流、電気回路設計など、現実の様々な問題に応用されています。例えば、配達員が複数の配達先を巡回するときや、電気回路の部品を最小の距離でつなぐときなどに使われます。</p>
+<p>今回は、巡回セールスマン問題に対して厳密解を求める手法(Algorithm的なアプローチ)と、近似解を求める手法(Heuristic的なアプローチ)について解説します。</p>
+<h2 id=algorithm的なアプローチ>Algorithm的なアプローチ</h2>
+<p>先述した"愚直に全ての経路を試し、最短経路を求める"という手法だと $\Omega(N!)$ 掛かりますが、
+ヘルドカープのアルゴリズムを用いると、 $O(N^2 2^N)$ で解くことができます。</p>
+<h3 id=動的計画法>動的計画法</h3>
+<p>ヘルドカープのアルゴリズムは、動的計画法を用いた手法です。まずは動的計画法について説明します。</p>
+<p>動的計画法とは、解きたい問題を小さな部分問題に分割し、それらの部分問題の解を用いて、元の問題の解を求める手法です。</p>
+<p>動的計画法の例として、うさぎのつがい問題を考えます。うさぎのつがい問題とは、次のような問題です。</p>
+<blockquote>
+<p>1つがいのうさぎは産まれて2ヶ月後から、毎月1つがいのうさぎを産むとします。今、産まれたばかりの1つがいのうさぎがいます。$n$ ヶ月後には、うさぎは合計何つがいになっているでしょうか？
+(1つがいとは、オスとメスの組のことです。)</p>
+</blockquote>
+<p>$n$ ヶ月後のうさぎの数を $F_n$ と書くことにします。$F_n$ の値を求める問題を考えます。
+問題より、$F_1 = 1$ です。また、このうさぎのつがいは生まれたばかりなので、翌月には産むことができないため、$F_2 = 1$ です。
+$n \geq 3$ のときについて考えます。$n$ ヶ月後のうさぎのつがいの数は、$n - 1$ ヶ月後の<strong>新たに生まれた</strong>うさぎのつがいの数と、<strong>元からいる</strong>うさぎのつがいの数がわかればそこから求めることができます。</p>
+<ul>
+<li>$n - 1$ ヶ月後に<strong>新たに生まれた</strong>うさぎのつがいの数は、$n - 2$ か月後のうさぎのつがいの数との差です。すなわち、$F_{n-1} - F_{n-2}$ です。</li>
+<li>$n - 1$ か月後に<strong>元からいる</strong>うさぎのつがいの数は、$n - 2$ か月後のうさぎのつがいの数です。すなわち、$F_{n-2}$ です。
+$n$ か月後のうさぎのつがいの数について考えます。$n - 1$ か月後に<strong>新たに生まれた</strong>うさぎのつがいは子を産むことができませんが、<strong>元からいる</strong>うさぎのつがいは子を産みます。よって数が2倍になります。
+よって、$n$ か月後のうさぎのつがいの数は、$F_n = (F_{n - 1} - F_{n - 2}) + 2F_{n - 2} = F_{n - 1} + F_{n - 2}$ と計算することができます。</li>
+</ul>
+<p>これより、解きたい問題「$n$ か月後のうさぎのつがいの数」を小問題「$n - 1$ か月後のうさぎのつがいの数」と 「$n - 2$ か月後のうさぎのつがいの数」に分割することができました。
+分割した問題について、また同様に分割することで、最終的には解きたい問題 「$n$ か月後のうさぎのつがいの数」を求めることができます。
+このような手法を、<strong>動的計画法</strong>と呼びます。</p>
+<p>(じつは $n$ か月後のうさぎのつがいの数は、フィボナッチ数列の第 $n$ 項目の値と一致する！)</p>
+<h3 id=ヘルドカープのアルゴリズム>ヘルドカープのアルゴリズム</h3>
+<p>$N$ 個の都市がある巡回セールスマン問題、つまり、
+頂点集合 $V = \{1, 2, \ldots, N \}$ に対して、$1$ からスタートし $V$ の頂点をすべて訪れて $1$ に戻る最短経路を求める問題を考えます。
+ここで、これが解ければ、$N$ 個の都市を巡回する最短経路が求められます(全ての頂点を通るため、頂点$1$からスタートする最短経路を考えてもよいです)。</p>
+<p>以下、頂点 $u$ から頂点 $v$ への距離を $d_{u, v}$ と表します。</p>
+<p>$$
+f(S, v) \coloneqq 1 からスタートし、S の各頂点を全て訪れて v にいる時の最短経路の長さ
+$$</p>
+<p>という関数を考えます。ここで、$S$ は頂点集合 $V$ の部分集合であり、$v \in S$ とします。
+この関数の値が求められたならば、解きたい問題の解は
+$$
+\min_{v \in V} \{ f(V, v) + d_{v, 1} \}
+$$
+で求めることができます。</p>
+<p>この関数 $f(S, v)$ を求めることを考えます。
+まず、 $f(\{1\}, 1) = 0$　です。1からスタートして今1にいるので、距離は $0$ です。</p>
+<p>$S$ が $\{1\}$ でないときの $f(S, v)$ の値を考えます。$f(S, v)$ の値は「$S$の各頂点を全て訪れて $v$ にいる時の最短経路の長さ」でした。</p>
+<p>$S \backslash \{v\}$ ($S$から$v$を除いた集合) について考えます。$s \in S \backslash \{v\}$ とすると、
+$f(S \backslash \{v\}, s)$ は「$S \backslash \{v\}$ の各頂点を全て訪れて $s$ にいる時の最短経路の長さ」です。この状態から $v$ に移動することを考えると、
+その値 $f(S \backslash \{v\}, s) + d_{s, v}$ は「$S$の各頂点を全て訪れて $v$ にいる最短経路の長さの<strong>候補</strong>」になります。よって、求める値は候補のうちで最も小さいものになるので、
+$$
+f(S, v) = \min_{s \in S \backslash \{v\}} \{ f(S \backslash \{v\}, s) + d_{s, v} \}
+$$
+と求めることができます。</p>
+<p>ここでは $S$ を集合としましたが、コードを書くときには少し工夫をします($N \leq 20$ 程度とします)。
+$S$ をbitで表現します。例えば $S = \{1, 3, 5\}$ ならば、$S$ のbit表現は $10101$ です。
+bitで表現することにより、様々な操作が簡単に行えます。以下、C++での例を挙げます。</p>
+<ul>
+<li><code>a &lt;&lt; b</code> : $a$ を左に $b$ bitシフト 例えば <code>(10101 &lt;&lt; 2) == 1010100</code></li>
+<li><code>a & b</code> : $a$ と $b$ のbitごとの論理積 例えば <code>(10101 & 11001) == 10001</code> (各bitが1と1のときのみ1)</li>
+<li><code>a | b</code> : $a$ と $b$ のbitごとの論理和 例えば <code>(10101 | 11001) == 11101</code> (各bitが0と0のときのみ0)</li>
+<li><code>a ^ b</code> : $a$ と $b$ のbitごとの排他的論理和 例えば <code>(10101 ^ 11001) == 01100</code> (各bitが異なるときのみ1)</li>
+</ul>
+<p>これらを用いると、例えば $S \backslash \{v\}$ は <code>S ^ (1 &lt;&lt; v)</code> と表せたり、$S$ に $v$ が含まれているかどうかを <code>S & (1 &lt;&lt; v)</code> と表せたりします。</p>
+<p>実際にこれを実装すると、次のようになります。問題はAtCoderの典型アルゴリズム問題集にあります。</p>
+<p><a href=https://atcoder.jp/contests/typical-algorithm/tasks/typical_algorithm_c>https://atcoder.jp/contests/typical-algorithm/tasks/typical_algorithm_c</a></p>
+<h4 id=問題>問題</h4>
+<blockquote>
+<p>$N$ 個の都市があり、$0, 1, \ldots, N$ と番号付けられている。全ての異なる2都市の間には道が存在し、都市 $i$ から都市 $j$ に移動するときのコストは $A_{i, j}$ である。あなたは今都市 $0$ にいる。ここから都市 $0$ 以外の都市をちょうど1度ずつ訪れ、最後に都市 $0$ に戻ってくる経路を創りたい。そのような経路における合計コストの最小値を求めよ。</p>
+</blockquote>
+<h4 id=回答>回答</h4>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#75715e>#include</span> <span style=color:#75715e>&lt;bits/stdc++.h&gt;</span><span style=color:#75715e>
+</span><span style=color:#75715e></span><span style=color:#66d9ef>using</span> <span style=color:#66d9ef>namespace</span> std;
+
+<span style=color:#66d9ef>int</span> <span style=color:#a6e22e>main</span>() {
+
+    <span style=color:#75715e>// 入力
+</span><span style=color:#75715e></span>    <span style=color:#66d9ef>int</span> N; cin <span style=color:#f92672>&gt;&gt;</span> N;
+    vector A(N, vector<span style=color:#f92672>&lt;</span><span style=color:#66d9ef>long</span> <span style=color:#66d9ef>long</span><span style=color:#f92672>&gt;</span>(N));
+    <span style=color:#66d9ef>for</span> (<span style=color:#66d9ef>int</span> i <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>; i <span style=color:#f92672>&lt;</span> N; <span style=color:#f92672>++</span>i) {
+        <span style=color:#66d9ef>for</span> (<span style=color:#66d9ef>int</span> j <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>; j <span style=color:#f92672>&lt;</span> N; <span style=color:#f92672>++</span>j) {
+            cin <span style=color:#f92672>&gt;&gt;</span> A[i][j];
+        }
+    }
+
+    <span style=color:#75715e>// dp[S][v] := 1 からスタートし、S の各頂点を全て訪れて v にいる時の最短経路の長さ
+</span><span style=color:#75715e></span>    <span style=color:#75715e>// (記事では f と置いていたが、ここでは dp と書く)
+</span><span style=color:#75715e></span>    <span style=color:#75715e>// 大きい値で初期化しておく
+</span><span style=color:#75715e></span>    vector dp(<span style=color:#ae81ff>1</span> <span style=color:#f92672>&lt;&lt;</span> N, vector<span style=color:#f92672>&lt;</span><span style=color:#66d9ef>long</span> <span style=color:#66d9ef>long</span><span style=color:#f92672>&gt;</span>(N, <span style=color:#ae81ff>1e18</span>));
+    dp[<span style=color:#ae81ff>1</span>][<span style=color:#ae81ff>0</span>] <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>;
+
+    <span style=color:#66d9ef>for</span> (<span style=color:#66d9ef>int</span> S <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>; S <span style=color:#f92672>&lt;</span> (<span style=color:#ae81ff>1</span> <span style=color:#f92672>&lt;&lt;</span> N); S<span style=color:#f92672>++</span>) {
+        <span style=color:#66d9ef>for</span> (<span style=color:#66d9ef>int</span> i <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>; i <span style=color:#f92672>&lt;</span> N; i<span style=color:#f92672>++</span>) {
+            <span style=color:#66d9ef>for</span> (<span style=color:#66d9ef>int</span> j <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>; j <span style=color:#f92672>&lt;</span> N; j<span style=color:#f92672>++</span>) {
+                <span style=color:#66d9ef>if</span> (S <span style=color:#f92672>&amp;</span> (<span style=color:#ae81ff>1</span> <span style=color:#f92672>&lt;&lt;</span> j)) {
+                    dp[S][i] <span style=color:#f92672>=</span> min(dp[S][i], dp[S <span style=color:#f92672>^</span> (<span style=color:#ae81ff>1</span> <span style=color:#f92672>&lt;&lt;</span> i)][j] <span style=color:#f92672>+</span> A[j][i]);
+                }
+            }
+        }
+    }
+
+    <span style=color:#75715e>// 答えは dp[(1 &lt;&lt; N) - 1][i] + A[i][0] の最小値
+</span><span style=color:#75715e></span>    <span style=color:#66d9ef>long</span> <span style=color:#66d9ef>long</span> ans <span style=color:#f92672>=</span> <span style=color:#ae81ff>1e18</span>;
+    <span style=color:#66d9ef>for</span> (<span style=color:#66d9ef>int</span> i <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>; i <span style=color:#f92672>&lt;</span> N; i<span style=color:#f92672>++</span>) {
+        ans <span style=color:#f92672>=</span> min(ans, dp[(<span style=color:#ae81ff>1</span> <span style=color:#f92672>&lt;&lt;</span> N) <span style=color:#f92672>-</span> <span style=color:#ae81ff>1</span>][i] <span style=color:#f92672>+</span> A[i][<span style=color:#ae81ff>0</span>]);
+    }
+
+    cout <span style=color:#f92672>&lt;&lt;</span> ans <span style=color:#f92672>&lt;&lt;</span> endl;
+
+}
+</code></pre></div><p>この手法を用いることで、頂点数が $N$ の巡回セールスマン問題を $O(N^2 2^N)$ で解くことができます。</p>
+<h2 id=heuristic的なアプローチ>Heuristic的なアプローチ</h2>
+<p>ヘルドカープのアルゴリズムを用いると $N \leq 20$ 程度までの問題に対しては解くことができますが、それ以上になると(指数的に実行時間が長くなるため)解くことが困難になります。</p>
+<p>今まで厳密解を求めることを考えていましたが、今度は近似解を求めることを考えます
+(ここでいう近似解とは、「最適解には達しないが、比較的良い解」のことです)。</p>
+<h3 id=山登り法>山登り法</h3>
+<p>ある問題に対して、現在の解を少し変化させて良くなったら採用し、これを繰り返すことで答えをどんどん良くしていく手法を山登り法といいます。</p>
+<p>巡回セールスマン問題に対しても、山登り法を用いることで、近似解を求めることができます。
+具体的に、以下のような手順で近似解を求めます。</p>
+<ol>
+<li>ランダムな順列を生成する(初期解)</li>
+<li>以下を繰り返す
+<ol>
+<li>現在の解を少し変化させる(近傍解)</li>
+<li>現在の解より近傍解の方が良ければ、近傍解を現在の解とする</li>
+</ol>
+</li>
+</ol>
+<p>ここでは、近傍解を求める方法を「ランダムに2つの都市を選び、訪れる順番を入れ替える」として考えてみます。</p>
+<blockquote class=twitter-tweet><p lang=ja dir=ltr>ランダム2点間swapの山登り <a href=https://t.co/EfucnjfXBo>pic.twitter.com/EfucnjfXBo</a></p>&mdash; きょ (@Kyo_s_s) <a href="https://twitter.com/Kyo_s_s/status/1647461957933600768?ref_src=twsrc%5Etfw">April 16, 2023</a></blockquote>
+<script async src=https://platform.twitter.com/widgets.js></script>
+<p>ランダムな初期解から時間が経つにつれて、解が良くなっていくことがわかります。これが山登り法です。</p>
+<p>山登り法は、最適解に到達する保障はありませんが、近傍解を効率的に生成することができる場合、比較的シンプルに近似解を求めることができます。
+しかし、局所最適解に陥りやすかったり、初期解や近傍解の生成方法によっては良い解にたどり着けない場合もあります。</p>
+<h3 id=2-opt>2-opt</h3>
+<p>先ほどは近傍解を作る方法を「ランダムに2つの都市を選び、訪れる順番を入れ替える」として考えましたが、この他にも様々な近傍解の作り方が考えられます。</p>
+<p>今度は近傍解を2-optという手法を用いて求めてみます。
+2-optとは、現在の解の中で2つの都市を選び、その間の順番を逆にすることで近傍解を作ります。</p>
+<p>例えば、以下のような解があったとします。</p>
+<p><img src=https://Kyo-s-s.github.io/blog/images/tsp/2_opt_example1.drawio.png alt=2_opt-example1></p>
+<p>1-2-3-4-5-6-7-8 という順番で訪れる解です。2-3の辺と6-7の辺が交差しています(赤い辺です)。
+ここで、2の次に6へ訪れ、5,4,3,7の順で訪れる、つまり 1-2-6-5-4-3-7-8 という解を考えます。</p>
+<p><img src=https://Kyo-s-s.github.io/blog/images/tsp/2_opt_example2.drawio.png alt=2_opt-example2></p>
+<p>訪れる順序を一部逆にするだけで、交差していた箇所が解消され、距離が短くなりました！</p>
+<p>このように、訪れる順序の一部を逆にするような近傍会を使い山登り法を行う手法を2-opt法といいます。
+実際に2-optを用いて山登り法を行うと、以下のようになります。</p>
+<blockquote class=twitter-tweet><p lang=und dir=ltr>2-opt <a href=https://t.co/5Pimy9yENT>pic.twitter.com/5Pimy9yENT</a></p>&mdash; きょ (@Kyo_s_s) <a href="https://twitter.com/Kyo_s_s/status/1647195848445673473?ref_src=twsrc%5Etfw">April 15, 2023</a></blockquote>
+<script async src=https://platform.twitter.com/widgets.js></script>
+<p>2-optを用いることで、「ランダムに2つの都市を選び、訪れる順番を入れ替える」を近傍解の生成方法として用いた場合と比べて、より良い解を求めることができることがわかります。</p>
+<h2 id=まとめ>まとめ</h2>
+<ul>
+<li>巡回セールスマン問題とは、$N$ 個の都市を全て訪れて戻ってくるような最短経路を求める問題！</li>
+<li>$N$ が大きくなると経路の数が爆発的に増えてしまうため、厳密解を求めることが難しい！
+<ul>
+<li>ヘルドカープのアルゴリズムを用いると、$N \leq 20$ 程度までの問題に対しては解くことができるようになる！</li>
+</ul>
+</li>
+<li>近似解を求めることもできる！
+<ul>
+<li>山登り法を用いると、ランダムな初期解から時間が経つにつれて、解が良くなっていくことがわかる！</li>
+<li>2-opt法など、近傍解を効率的に生成することができるとよりよい近似解を求めることができる！</li>
+</ul>
+</li>
+</ul>
+</div>
+</article>
+<section class=comment>
+<p class=local-info>
+Comment is disabled to avoid unwanted discussions from 'localhost:1313' on your Disqus
+account...
+</p>
+<div id=disqus_thread></div>
+</section>
+<script type=text/javascript>(function(){if(window.location.hostname=="localhost")return;document.querySelector('.local-info').classList.add('hide');let a=document.createElement('script');a.type='text/javascript',a.async=!0;let b='your disqus short name';a.src='https://'+b+'.disqus.com/embed.js',(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(a)})()</script>
+</main>
+</div>
+<footer class="footer clearfix">
+<ul class="control social clearfix">
+<li><a class="author btn" href=#>Kyo</a></li>
+<li>
+<a class="icon-link btn" href=https://github.com/Kyo-s-s><i class="icon github"></i></a>
+</li>
+<li>
+<a class="icon-link btn" href=https://twitter.com/Kyo_s_s><i class="icon twitter"></i></a>
+</li>
+<li>
+<a class="icon-link btn" href=https://Kyo-s-s.github.io/blog/index.xml type=application/rss+xml title=rss>
+<i class="rss icon"></i></a>
+</li>
+</ul>
+<ul class="control status clearfix">
+<li><a href=# class=btn>Posts:
+23</a>
+</li>
+<li><a href=# class=btn>Pages:
+0</a></li>
+<li><a href=# class=btn>en</a></li>
+<li><a href=https://gohugo.io class=btn>Hugo: 0.91.2</a></li>
+<li><a href=https://github.com/sfengyuan/edidor class=btn>Theme: Edidor</a></li>
+<li>
+<a href=# class=btn>Last build: <time datetime=2021-12-23T15:33:34Z>2021-12-23T15:33:34Z</time>
+</a>
+</li>
+</ul>
+</footer>
+<div class=dialog>
+<div class=wrapper>
+<div class=clearfix><button class="btn close-dialog">X</button></div>
+<header>
+<h1 class=title>Theme Name</h1>
+</header>
+<main>
+<div class=clearfix>
+<label for=theme-name>
+<p>Only English Character, space, hyphen are allowed!</p>
+<p>Valid name examples: "custom", "fantastic theme", "my-theme"</p>
+<p>Invalid name examles: "我的主题", ":)", "123"</p>
+</label>
+<input type=text name=theme-name id=theme-name>
+</div>
+<div class=clearfix>
+<button class="btn export">Export</button>
+</div>
+</main>
+<footer></footer>
+</div>
+</div>
+<script src=https://Kyo-s-s.github.io/blog/js/main.js></script>
+<script src=https://Kyo-s-s.github.io/blog/js/add-on.js></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js></script>
+<script>hljs.initHighlightingOnLoad()</script>
+<script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga('create','your ga id','auto'),ga('send','pageview'))</script>
+<script async src=https://www.google-analytics.com/analytics.js></script>
+</body>
+</html>
